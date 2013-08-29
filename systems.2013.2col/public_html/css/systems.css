@@ -62,8 +62,10 @@ body > header {
 }
 
 #content #right {
-	margin-left: 240px;
+	margin-left: 20px;
 	width: 650px;
+	display: inline-block;
+	position: relative;
 }
 
 

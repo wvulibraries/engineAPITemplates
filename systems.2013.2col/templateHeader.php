@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>{local var="currentDisplayObjectTitle"}</title>
+	<title>{local var="pageTitle"}</title>
 
 	<meta charset="UTF-8">
 
-	<meta name="keywords" content="{local var="currentDisplayObjectKeywords"}">
-	<meta name="description" content="{local var="currentDisplayObjectDescription"}">
+	<meta name="keywords" content="{local var="pageKeywords"}">
+	<meta name="description" content="{local var="pageDescription"}">
 
 	<!-- Facebook Open Graph tags -->
-	<meta property="og:title" content="{local var="currentDisplayObjectTitle"}" />
+	<meta property="og:title" content="{local var="pageTitle"}" />
 	<meta property="og:type" content="university" />
 	<meta property="og:url" content="{local var="pageURL"}" />
 	<meta property="og:image" content="{local var="pageImg"}" />

@@ -1,17 +1,28 @@
 	<!-- Begin Footer -->
 	
-		<?php if (localvars::get("excludeToolbar") != "TRUE") { ?>
+		<?php 
+		if (EngineAPI::VERSION >= "4.0") {
+			$localvars      = localvars::getInstance();
+			$excludeToolbar = $localvars->get("excludeToolbar");
+		}
+		else {
+			$excludeToolbar = localvars::get("excludeToolbar");
+		}
+
+		if ($excludeToolbar != "TRUE") { 
+
+		?>
 	
 		<footer id="toolBar">
 			<p>
 				<!-- Lockerz Share BEGIN -->
-				<a class="a2a_dd" href="http://www.addtoany.com/share_save"><img src="http://static.addtoany.com/buttons/share_save_120_16.gif" width="120" height="16" border="0" alt="Share"/></a>
+				<!--<a class="a2a_dd" href="http://www.addtoany.com/share_save"><img src="http://static.addtoany.com/buttons/share_save_120_16.gif" width="120" height="16" border="0" alt="Share"/></a>
 				<script type="text/javascript">
 				var a2a_config = a2a_config || {};
 				a2a_config.onclick = 1;
 				a2a_config.prioritize = ["facebook", "google_plus", "twitter", "email", "blogger_post", "digg", "linkedin", "reddit", "delicious", "myspace"];
 				</script>
-				<script type="text/javascript" src="http://static.addtoany.com/menu/page.js"></script>
+				<script type="text/javascript" src="http://static.addtoany.com/menu/page.js"></script>-->
 				<!-- Lockerz Share END -->
 			</p>
 			<p>last updated: {date format="F j, Y" time="<?php print filemtime($_SERVER['SCRIPT_FILENAME']); ?>"}</p>
@@ -30,7 +41,7 @@
 				<label for="siteSearchInput">Search Library Pages</label>
 			</span>
 			
-			<form method='get' action='http://search.wvu.edu/search'>
+			<form method='get' action='/search.php'>
 				<input type='hidden' name='as_sitesearch' value='www.libraries.wvu.edu' />
 				<input type='hidden' name='client' value='default_frontend' />
 				<input type='hidden' name='output' value='xml_no_dtd' />
@@ -42,7 +53,7 @@
 		</section>
 		
 		<div id="footerLinks">
-			<section id="popularResources">
+				<section id="popularResources">
 				<!-- These should really be in header blocks, but not allowed in footer -->
 				<h2>POPULAR RESOURCES</h2>
 				<ul>
@@ -50,20 +61,20 @@
 						<a href="http://mountainlynx.lib.wvu.edu" title="Library Catalog">Library Catalog</a>
 					</li>
 					<li>
-						<a href="http://illiad.lib.wvu.edu" title="Interlibrary Loan">Interlibrary Loan</a>
+						<a href="https://illiad.lib.wvu.edu" title="Interlibrary Loan">Interlibrary Loan</a>
 					</li>
 					<li>
-						<a href="http://www.libraries.wvu.edu/ejournals/" title="eJournals">eJournals</a>
+						<a href="/ejournals/" title="eJournals">eJournals</a>
 					</li>
 					<li>
-						<a href="http://reserves.lib.wvu.edu" title="Reserves &amp; eReserves">Reserves</a>
+						<a href="https://reserves.lib.wvu.edu" title="Reserves &amp; eReserves">Reserves</a>
 					</li>
 					<li>
 						<!-- <a href="http://www.libraries.wvu.edu/databases/cgi-bin/databases.pl?1185309093=invs" title="Refworks">Refworks</a> -->
 						<a href="http://systems.lib.wvu.edu/availableComputers" title="Available Computers">Available Computers</a>
 					</li>
 					<li>
-						<a href="http://www.libraries.wvu.edu/databases/" title="Databases">Databases</a>
+						<a href="/databases/" title="Databases">Databases</a>
 					</li>
 					<li>
 						<a href="http://ad4tq3gq5x.search.serialssolutions.com/?SS_Page=refiner&amp;SS_RefinerEditable=yes" title="Have a Citation? Find it @WVU">Find it @WVU</a>
@@ -76,12 +87,15 @@
 			
 			<section id="social">
 					<h2>WE'RE SOCIAL</h2>
-				
-				<div id="footerFacebook">
-					<div class="fb-like" data-send="true" data-width="370" data-show-faces="false"></div>
-				</div>
-				<div id="footerTwitter">
-				</div>
+				<a href="http://www.facebook.com/pages/Morgantown-WV/WVU-Libraries/108610159200233"><img src="{local var="imgURL"}/footer/socialIcons/icon_facebook.gif" alt="Facebook" /></a>
+                <a href="http://www.youtube.com/user/WVULibraries"><img src="{local var="imgURL"}/footer/socialIcons/icon_youtube.gif" alt="YouTube" /></a>
+                <a href="http://twitter.com/wvuLibraries"><img src="{local var="imgURL"}/footer/socialIcons/icon_twitter.gif" alt="Twitter" /></a><br />
+                <a href="/about/friends/donations/"><img src="{local var="imgURL"}/footer/socialIcons/icon_give.gif" alt="Give" /></a>
+                <a href="https://mix.wvu.edu/ "><img src="{local var="imgURL"}/footer/socialIcons/icon_mix.gif" alt="Mix" /></a>
+                <a href="/rss/"><img src="{local var="imgURL"}/footer/socialIcons/newrss.jpg" alt="RSS" /></a>
+              
+    				
+			
 				
 			</section>
 			
@@ -90,7 +104,7 @@
 						<h2>DONATE TO THE LIBRARIES</h2>
 					<ul>
 						<li>
-							<a href="http://www.libraries.wvu.edu/about/friends/">Become a Friend of the Libraries</a>
+							<a href="/about/friends/">Become a Friend of the Libraries</a>
 						</li>
 						<li>
 							<a href="/about/friends/donations/">Ways to Give</a>
@@ -101,8 +115,7 @@
 					</ul>
 				</section>
 				<section>
-					<a href="http://www.facebook.com/pages/Morgantown-WV/WVU-Libraries/108610159200233"><img src="{local var="imgURL"}/footer/socialIcons/icon_facebook.gif" alt="Facebook" /></a><a href="/about/friends/donations/"><img src="{local var="imgURL"}/footer/socialIcons/icon_give.gif" alt="Give" /></a><a href="https://mix.wvu.edu/ "><img src="{local var="imgURL"}/footer/socialIcons/icon_mix.gif" alt="Mix" /></a><a href="http://twitter.com/wvuLibraries"><img src="{local var="imgURL"}/footer/socialIcons/icon_twitter.gif" alt="Twitter" /></a><a href="/rss/"><img src="{local var="imgURL"}/footer/socialIcons/newrss.jpg" alt="RSS" /></a><a href="http://www.youtube.com/user/WVULibraries"><img src="{local var="imgURL"}/footer/socialIcons/icon_youtube.gif" alt="YouTube" /></a>
-					<a href="/services/ask/"><img src="{local var="imgURL"}/askALibrarianButton.png" alt="Ask a Librarian" /></a>
+					<a href="http://answers.lib.wvu.edu/"><img src="{local var="imgURL"}/askALibrarianButton.png" alt="Ask a Librarian" /></a>
 				</section>
 			</div>
 			

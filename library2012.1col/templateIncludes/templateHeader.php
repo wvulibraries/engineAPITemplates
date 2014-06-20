@@ -13,6 +13,7 @@
 	<meta property="og:site_name" content="WVU Libraries" />
 	<meta property="fb:admins" content="1021916351" />
 
+	
 	<script type="text/javascript" src="{local var="jsURL"}/jquery/jquery.js"></script>
 	<script type="text/javascript" src="{local var="jsURL"}/jquery/jquery.tweet.js"></script>
 	
@@ -134,22 +135,41 @@
 	
 	<?php 
 	// include the CSS for the home page
-	$url = localvars::get("docRoot")."/index.php";
+	if (EngineAPI::VERSION >= "4.0") {
+		$localvars  = localvars::getInstance();
+		$url = $localvars->get("docroot");
+	}
+	else {
+		$url = localvars::get("docRoot");
+	}
+	$url .= "/index.php";
+
 	$url = str_replace("/","\\/",$url);
 	recurseInsert("templateIncludes/homepageHeaderIncludes.php","php","^".$url,"PHP_SELF"); 
 	
+	if (EngineAPI::VERSION >= "4.0" && templates::name() == "library2012.2col") {
+		$templateIncludesFilename = "templateIncludes/2colHeaderIncludes.php";
+	}
+	else if (EngineAPI::VERSION >= "4.0" && templates::name() == "library2012.3col") {
+		$templateIncludesFilename = "templateIncludes/3colHeaderIncludes.php";
+	}
+	else if (EngineAPI::VERSION >= "4.0" && templates::name() == "library2012.2col.right") {
+		$templateIncludesFilename = "templateIncludes/2colRightHeaderIncludes.php";
+	}
 	// include the 2 column css when the 2column template is loaded
-	if ($engine->eTemplate("name") == "library2012.2col") {
-		recurseInsert("templateIncludes/2colHeaderIncludes.php","php");
+	else if (EngineAPI::VERSION < "4.0" && $engine->eTemplate("name") == "library2012.2col") {
+		$templateIncludesFilename = "templateIncludes/2colHeaderIncludes.php";
 	}
 	// include the 3 column css when the 2column template is loaded
-	if ($engine->eTemplate("name") == "library2012.3col") {
-		recurseInsert("templateIncludes/3colHeaderIncludes.php","php");
+	else if (EngineAPI::VERSION < "4.0" && $engine->eTemplate("name") == "library2012.3col") {
+		$templateIncludesFilename = "templateIncludes/3colHeaderIncludes.php";
 	}
 	// include the 3 column css when the 2column template is loaded
-	if ($engine->eTemplate("name") == "library2012.2col.right") {
-		recurseInsert("templateIncludes/2colRightHeaderIncludes.php","php");
+	else if (EngineAPI::VERSION < "4.0" && $engine->eTemplate("name") == "library2012.2col.right") {
+		$templateIncludesFilename = "templateIncludes/2colRightHeaderIncludes.php";
 	}
+
+	recurseInsert($templateIncludesFilename,"php");
 	
 	?>
 
@@ -180,7 +200,7 @@
 					<a href="http://www.wvu.edu/campusmap/" title="">Campus Map</a>
 				</li>
 				<li>
-					<a href="http://directory.wvu.edu/" title="">Directory</a>
+					<a href="/about/directory/" title="">Directory</a>
 				</li>
 				<li>
 					<a href="/about/contactus/" title="">Contact Us</a>

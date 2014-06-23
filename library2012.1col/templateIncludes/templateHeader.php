@@ -169,7 +169,7 @@
 		$templateIncludesFilename = "templateIncludes/2colRightHeaderIncludes.php";
 	}
 
-	recurseInsert($templateIncludesFilename,"php");
+	if (isset($templateIncludesFilename)) recurseInsert($templateIncludesFilename,"php");
 	
 	?>
 

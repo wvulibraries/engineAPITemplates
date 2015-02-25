@@ -152,7 +152,7 @@
 		    <section class="bp-body">
 		        <p class="breadcrumb">
 		            <a href="https://www.libraries.wvu.edu" class="breadCrumbLink">Home</a> 
-		            <span class="breadCrumbSpacer">&rsaquo;</span>
-		            {breadCrumbs titlecase="TRUE" spacer="&rsaquo;"}
+		            <span class="breadCrumbSpacer">&rsaquo;</span> Reserves
+		            <!-- {breadCrumbs titlecase="TRUE" spacer="&rsaquo;"} -->
 				</p>
 				

@@ -98,6 +98,7 @@
 			    <div class="ilheader-top">
 			        <div class="wrap">
 			            <!-- Individual Library Time -->
+		            	<a class="iltime" href="https://reserves.lib.wvu.edu/publicLogin.php">Log In <i class="fa fa-lock"></i></a>
 			            <h1 class="iltitle"><a href="https://reserves.lib.wvu.edu/">Reserves</a></h1>
 			            <!-- Social Media -->
 			            <ul class="ilsocialmedia">

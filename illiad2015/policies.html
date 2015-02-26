@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>WVU Libraries ILLiad</title>
+
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+
+	<!-- Facebook Open Graph tags -->
+	<meta property="og:title" content="About ILLiad" />
+	<!-- Facebook Open Graph tags (templates) -->
+	<meta property="og:type" content="university" />
+	<meta property="og:url" content="http://www.libraries.wvu.edu/services/" />
+	<meta property="og:image" content="" />
+	<meta property="og:site_name" content="WVU Libraries" />
+	<meta property="fb:admins" content="1021916351" />
+
+	<meta charset="UTF-8">
+
+<link rel="stylesheet" type="text/css" href="css/main.css" />
+	<script type="text/javascript" src="https://www.libraries.wvu.edu/javascript/2012/jquery/jquery.js"></script>
+	<script type="text/javascript" src="https://www.libraries.wvu.edu/javascript/2012/jquery/jquery.tweet.js"></script>
+	
+	<script type="text/javascript" src="https://www.libraries.wvu.edu/javascript/2012/modernizr.js"></script>
+	<!-- // <script type="text/javascript" src="https://www.libraries.wvu.edu/javascript/2012/html5.js"></script> -->
+	<script type="text/javascript" src="https://www.libraries.wvu.edu/javascript/2012/bootstrap.js"></script>
+
+	<!-- Add some HTML5 element support into IE 6 - 8 -->
+	<!--[if lt IE 9]>
+		<script type="text/javascript" src="https://www.libraries.wvu.edu/javascript/2012/html5.js"></script>
+	<![endif]-->
+
+	<!-- <script type="text/javascript" src="https://www.libraries.wvu.edu/javascript/2012/bootstrap/js/bootstrap.min.js"></script> -->
+	<!-- <link rel="stylesheet"                       type="text/css" href="https://www.libraries.wvu.edu/javascript/2012/bootstrap/css/bootstrap.min.css"/> -->
+	<link rel="stylesheet"                       type="text/css" href="https://www.libraries.wvu.edu/css/2012/bootstrap.css"/>
+	<link rel="stylesheet" type="text/css" href="https://www.libraries.wvu.edu/css/2012/common.less" />
+	<link rel="stylesheet" type="text/css" href="https://www.libraries.wvu.edu/css/2012/fonts.less" />
+	<link rel="stylesheet" type="text/css" href="https://www.libraries.wvu.edu/css/2012/print.css" media="print" />
+	
+	<link rel="stylesheet"      type="text/css" href="https://www.libraries.wvu.edu/css/2012/jquery.tweet.css" />
+	
+	<script type="text/javascript">
+	
+	$(document).ready(function() {
+
+		$("#username").focus();
+
+		// Footer 
+		$("#footerTwitter").tweet(
+			{
+				count: 1,
+				username: "wvulibraries",
+				loading_text: "Loading Twitter Feed ... "
+			}
+		);
+
+		// Header
+		if (!Modernizr.input.placeholder) {
+			$('input[type="search"], input[type="text"]', 'header').each(function () {
+				if (!$(this).val()) {
+					this.value = $(this).attr('placeholder');
+				}
+		
+				$(this).focus(function () {
+					if (this.value == $(this).attr('placeholder')) {
+						this.value = '';
+					}
+				});
+		
+				$(this).blur(function () {
+					if (this.value == '') {
+						this.value = $(this).attr('placeholder');
+					}
+				});
+		
+			});
+		}
+
+		var leftNavURLMatch = window.location.pathname; 
+
+		if (leftNavURLMatch.match(/[^\/]$/)) {
+			regex = /^(\/(.*?\/)+)(.*)$/;
+			if (leftNavURLMatch.match(regex)) {
+				leftNavURLMatch = RegExp.$1;
+			}
+		}
+		
+
+		var dirs = leftNavURLMatch.split("/");
+
+
+
+		for (I=0;I< dirs.length;I++) {
+			selected = false;
+
+			leftNavURLMatch = dirs.join("/") + "/";
+
+			leftNavURLMatch = leftNavURLMatch.replace(/\//g,"\\/");
+			myregexp = new RegExp("^"+leftNavURLMatch);
+			myregexp2 = new RegExp("^"+window.location.pathname+"$");
+
+			$('#contentContainerLeft ul li a').each(function(index) {
+
+				if ($(this).attr("href").match(myregexp2)) {
+					$(this).parent().addClass("leftNavSelected");
+					selected = true;
+					return( false );
+				}
+				else if ($(this).attr("href").match(myregexp)) {
+					$(this).parent().addClass("leftNavSelected");
+					selected = true;
+					return( false );
+				}
+			});
+
+
+			if (selected == true) {
+				break;
+			}
+
+			dirs.pop();
+
+		}
+
+
+
+	});
+
+	</script>
+	
+
+
+<link rel="stylesheet" type="text/css" href="https://www.libraries.wvu.edu/css/2012/home/main.less" />
+
+<script type="text/javascript">
+
+$(document).ready(function(){  
+
+    var rightH = $('#contentContainerRight').height();
+	var leftH  = $('#contentContainerLeft').height();
+	var midH   = $('#contentContainerMiddle').height();
+	
+	if (rightH >= leftH && rightH >= midH) {
+		$('#contentContainerLeft').css({  
+            'min-height': rightH
+        });
+		$('#contentContainerMiddle').css({  
+            'min-height': rightH
+        });
+	}
+	else if (leftH >= rightH && leftH >= midH) {
+		$('#contentContainerRight').css({  
+            'min-height': leftH
+        });
+		$('#contentContainerMiddle').css({  
+            'min-height': leftH
+        });
+	}
+	else if (midH >= rightH && midH >= leftH) {
+		$('#contentContainerRight').css({  
+            'min-height': midH
+        });
+		$('#contentContainerLeft').css({  
+            'min-height': midH
+        });
+	} 
+});
+
+</script>
+
+<link rel="stylesheet" type="text/css" href="https://www.libraries.wvu.edu/css/2012/1col.less" />
+
+</head>
+
+<body>
+
+	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+	  var js, fjs = d.getElementsByTagName(s)[0];
+	  if (d.getElementById(id)) return;
+	  js = d.createElement(s); js.id = id;
+	  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+	  fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
+	<header>
+		<div id="wvuMasthead">
+			<a href="http://www.wvu.edu"><img src="https://www.libraries.wvu.edu/images/2012/header/wvuLogo.png" alt="wvuLogo"/></a>
+			<ul>
+				<li>
+					<a href="http://www.wvu.edu/SiteIndex/" title="">A-Z Site Index</a>
+				</li>
+				<li>
+					<a href="http://www.wvu.edu/campusmap/" title="">Campus Map</a>
+				</li>
+				<li>
+					<a href="http://www.libraries.wvu.edu/about/directory/" title="">Directory</a>
+				</li>
+				<li>
+					<a href="http://www.libraries.wvu.edu/about/contactus/" title="">Contact Us</a>
+				</li>
+				<li>
+					<a href="http://www.libraries.wvu.edu/hours/" title="">Hours</a>
+				</li>
+				<li>
+					<a href="http://www.wvu.edu/" title="">WVU Home</a>
+				</li>
+			</ul>
+		</div>
+		
+		<div id="middleHeaderBar">
+
+			<h1><a href="http://www.libraries.wvu.edu/">L<span class="font-size-30pt">IBRARIES</span></a></h1>
+			<form method="GET" action="http://wvu.summon.serialssolutions.com/search">
+				<input type="hidden" name="s.fvf[]" value="ContentType,Newspaper Article,t" />
+				<input type="search" id="summonSearch" name="s.q" tabindex="1" placeholder="Search Summon: Books, eBooks, Videos, Articles, &amp; More" />
+				<button type="submit">
+					<span class="label">Search</span>
+				</button>
+
+			</form>
+		</div>
+		
+		<nav>
+			<ul>
+				<li>
+					<a href="http://www.libraries.wvu.edu/"><img src="https://www.libraries.wvu.edu/images/2012/header/homeSelected.png" alt="Home" /></a>
+				</li>
+				<li>
+					<a href="http://www.libraries.wvu.edu/libraries/" >LIBRARIES</a>
+				</li>
+				<li>
+					<a href="http://www.libraries.wvu.edu/collections/" >COLLECTIONS</a>
+				</li>
+				<li>
+					<a href="http://www.libraries.wvu.edu/instruction/" >INSTRUCTION</a>
+				</li>
+				<li>
+					<a href="http://www.libraries.wvu.edu/services/" >SERVICES</a>
+				</li>
+				<li>
+					<a href="http://www.libraries.wvu.edu/about/" >ABOUT</a>
+				</li>
+				
+			</ul>
+		</nav>
+		
+<a href="/services/ask/"><img src="https://www.libraries.wvu.edu/images/2012/askALibrarianButton.png" alt="Ask a Librarian" id="askALibrarian_header"/></a>
+		
+	</header>
+	
+	<div id="alertBar">
+		
+	</div>
+	
+	<div id="contentContainer">
+
+		<div id="contentContainerMiddle">
+			<header>
+            
+				<h1>WVU Libraries Interlibrary Loan Policies</h1>
+			</header>
+                
+<p>
+						<div class="item-box">
+							<p>
+								<strong>Eligibility</strong><br />
+								
+								
+									Currently enrolled WVU students, faculty and staff, who 
+									are in good standing with the WVU Libraries, are eligible for 
+									Interlibrary Loan (ILL) services.
+								
+							</p>
+						</div>
+
+						<div class="item-box">
+							<p>
+								<strong>Cost of Using Interlibrary Loan</strong><br />
+								
+								
+									WVU faculty, staff and students are not charged for Interlibrary 
+									Loan. The WVU Libraries absorb any costs charged by the lending 
+									library. However, interlibrary loan is not inexpensive. A national
+									study conducted by the Association of Research Libraries found that 
+									borrowing libraries incur costs averaging $18.00 for each borrowing 
+									request. Maintaining good relations with other lending institutions
+									helps keep our costs as low as possible. It is important that users 
+									return ILL materials by the due date and respect the restrictions
+									placed by the lending library. If ILL users do not return materials 
+									promptly, or if they mistreat materials, other institutions may 
+									refuse to loan WVU materials in the future. We expect WVU 
+									Interlibrary Loan users to cooperate by returning ILL materials 
+									on-time and by adhering to any restrictions imposed. Fees, fines and 
+									bills that can be incurred are listed below:
+								
+							</p>
+							
+								<p>
+									<strong>Overdue Fines</strong><br />
+									Interlibrary Loan materials are fined at a rate of $1.00 per day per item, except 
+									weekends and University holidays.  Items that have been recalled by the lending 
+									institution will be fined at $3.00 per day per item beginning the 
+									first day after the recall due date. Patrons who do not return 
+									their materials within 3 weeks will be blocked from all Circulation
+									transactions at all WVU Libraries, as well as denied the 
+									opportunity to place further Interlibrary Loan requests, until the 
+									item is returned.							
+								</p>
+								
+								
+								
+								<p>
+									<strong>Lost or Damaged Materials</strong><br />
+									WVU patrons who have lost or damaged Interlibrary Loan materials 
+									will be billed whatever replacement cost, including processing fee,
+									the lending institution imposes. The WVU Libraries ILL unit will 
+									impose an additional $10.00 processing fee. Underlining and 
+									highlighting are considered damage, and may incur fees.							
+								</p>
+								
+								<p>
+									<strong>Requested Items That Are Not Picked Up</strong><br />
+									Because the costs incurred in the Interlibrary Loan process are 
+									significant, it is important that requested materials are needed and
+									used. ILL users will be charged a $10.00 service fee for items that
+									are not picked up before their due dates. To avoid incurring this
+									fee, please call the ILL Office if you realize you will no longer 
+									need the requested item.							
+								</p>	
+
+<p>
+									<strong>Placing more than 250 Interlibrary Loan requests in one semester</strong><br />
+									Because interlibrary loan costs can be expensive and we are trying to serve the entire WVU community, it is crucial that users limit their requests to items that are essential to their research.  The Library has set a limit on requests at 250 in one semester.  When the number of requests placed by one user exceeds 250, the cost of each transaction over 250 will be passed on to the patron.
+						
+								</p>	
+						</div>
+						
+						
+						
+						<div class="item-box">
+							<p>
+								<strong>Paying Overdue Fines, Fees or Invoices</strong><br />
+								
+									Fines should be paid at the library where the cost was incurred.
+									At the Downtown Campus and Health Sciences Libraries, ILL fees can 
+									be paid at the Access Services Desk any time the library is open.  
+									Checks, cash or credit cards are accepted.
+									At the Evansdale Library, users can pay fines at the ILL Office.  Fees
+									must be paid during regular business hours (9-4, M-F) and checks or cash
+									will be accepted.
+							</p>
+
+							<p>
+									Students who owe ILL overdue fines, non-pickup fees or lost/damaged material 
+									fees may be referred to the Office of Student Accounts. All library fees and 
+									fines, including ILL charges, must be paid before a student is able to graduate 
+									or request transcripts.
+							</p>
+						</div>
+						
+						<div class="item-box">
+							<p>
+								<strong>What Can (and Can't) Be Borrowed</strong><br />
+								
+									Books, articles, conference papers, proceedings, musical scores and 
+									recordings, items on microfilm, dissertations and videos may all be 
+									requested. Textbooks may not be requested through Interlibrary Loan.
+									Users should use E-ZBorrow to request textbooks from other libraries.
+
+							</p>
+							
+
+								<p>
+									Materials that are very old (items older than the late 1800's) or 
+									rare items are often not available through Interlibrary Loan. Other items 
+									that are generally not available through Interlibrary Loan include 
+									the following:
+								</p>
+
+																	<ul>
+										<li>Whole issues of recent journals</li>
+										<li>Some genealogical material</li>
+										<li>Unpublished conference papers</li>
+										<li>Materials that are owned by the WVU Libraries</li>
+										<li>Textbooks</li>
+										<li>Newly published materials</li>
+									</ul>
+							
+						</div>
+						
+						<div class="item-box">
+							<p>
+								<strong>How Long Will It Take?</strong><br />
+
+									Book loans take an average of 1-2 weeks to arrive. Journal articles 
+									take an average of 1-5 days to arrive. Interlibrary loan users 
+									should give themselves plenty of time when requesting materials. 
+									Nationwide interlibrary loan activity peaks in October/November and 
+									March/April and requests may take longer during these times. The WVU
+									Libraries ILL service makes every effort to place your requests as 
+									soon as they are received. Once the request leaves the WVU Libraries,
+									it is up to the lending library to supply the material. Turnaround 
+									time depends on many factors and our ILL office cannot guarantee that
+									your materials will be received by a specific deadline. You may 
+									check the status of your requests anytime, but you must give both WVU
+									Libraries and the lending library a reasonable amount of time to 
+									request, process, and ship your materials. 
+							</p>
+						</div>
+						
+						<div class="item-box">
+							<p>
+								<strong>How Will I Know My Materials Have Arrived?</strong><br />
+									Notification for the arrival of loans is done by e-mail. All ILL 
+									users are required to register using a valid, active WVU e-mail 
+									account that they should check regularly. Users need to read all e-mail notices 
+									completely to determine where, and for how long, materials will be 
+									held. Other information, such as overdue notices, request for more 
+									information on a citation, denial of services, etc., will also be 
+									sent via e-mail.
+
+							</p>
+						</div>
+						
+						<div class="item-box">
+							<p>
+								<strong>How do I Pick Up My Requested Articles?</strong><br />
+
+												
+									To access articles online, you need to logon to your ILLiad account. 
+									At the main menu, choose "My PDF Articles" under "View" on the left 
+									side of the page. 
+
+							</p>
+							<p>
+
+									You will need Adobe Acrobat Reader installed and 
+									configured to work with your Web browser in order to view, download 
+									and print these articles. Acrobat Reader is available without charge 
+									from Adobe Systems at  www.adobe.com. Click the "Get Acrobat Reader" 
+									button to go directly to the download page.
+							</p>
+
+						</div>
+						
+											
+						<div class="item-box">
+							<p>
+								<strong>Restrictions</strong><br />
+								
+								
+									Interlibrary Loan is a courtesy provided by the lending library and 
+									any conditions of use imposed by that library must be strictly 
+									observed. Long-term use of borrowed material is prohibited. Loan 
+									periods vary since different libraries are supplying the materials.  
+									Generally, loans are for 2-4 weeks.  All items are subject to 
+									immediate recall by the lending library. The lending library may 
+									stipulate that use of an item be restricted to the library or it may 
+									prohibit all photocopying of the item. These limitations will be 
+									clearly indicated on the label of the borrowed item. Disregarding 
+									restrictions may result in cancellation of interlibrary loan service 
+									to the patron.
+								
+							</p>
+						</div>
+                
+        	</div>
+
+    <!-- Begin Footer -->
+	
+			
+		<footer id="toolBar">
+			<p>
+			</p>
+			<p></p>
+			<p>
+				<a href="mailto:Jessica.Tapia@mail.wvu.edu">Report an error on this page <img src="https://www.libraries.wvu.edu/images/2012/reportError.png" alt="Report Error" /></a>
+			</p>
+		</footer>
+	
+			
+	</div>
+	
+	<footer>
+		<section id="siteSearch">
+<!--			<span class="header">
+				<label for="SearchCriteria">Search Illiad</label>
+			</span>
+			
+		<form action="illiad.dll" name="Search" method="post">
+			<input type="hidden" name="IlliadForm" value="Search" />
+			<input id="SessionID" name="SessionID" type="hidden" value="" />
+			<input id="SearchCriteria" name="SearchCriteria" type="text" class="f-criteria" />				
+			<input type="submit" name="SubmitButton" value="Search" class="f-submit" />
+			<input name="SearchType" type="radio" id="SearchTypeActive" value="Active" checked class="f-searchType" /><label for="SearchTypeActive">Active</label>
+			<input name="SearchType" type="radio" id="SearchTypeAll" value="All" class="f-searchType" /><label for="SearchTypeAll">All</label>
+		</form>
+-->
+		</section>
+		
+		<div id="footerLinks">
+			<section id="popularResources">
+				<!-- These should really be in header blocks, but not allowed in footer -->
+				<h2>POPULAR RESOURCES</h2>
+				<ul>
+					<li>
+						<a href="http://mountainlynx.lib.wvu.edu" title="Library Catalog">Library Catalog</a>
+					</li>
+					<li>
+						<a href="http://illiad.lib.wvu.edu" title="Interlibrary Loan">Interlibrary Loan</a>
+					</li>
+					<li>
+						<a href="/ejournals/" title="eJournals">eJournals</a>
+					</li>
+					<li>
+						<a href="https://reserves.lib.wvu.edu" title="Reserves &amp; eReserves">Reserves</a>
+					</li>
+					<li>
+						<!-- <a href="http://www.libraries.wvu.edu/databases/cgi-bin/databases.pl?1185309093=invs" title="Refworks">Refworks</a> -->
+						<a href="http://systems.lib.wvu.edu/availableComputers" title="Available Computers">Available Computers</a>
+					</li>
+					<li>
+						<a href="/databases/" title="Databases">Databases</a>
+					</li>
+					<li>
+						<a href="http://ad4tq3gq5x.search.serialssolutions.com/?SS_Page=refiner&amp;SS_RefinerEditable=yes" title="Have a Citation? Find it @WVU">Find it @WVU</a>
+					</li>
+					<li>
+						<a href="http://libguides.wvu.edu/" title="Research Guides">Research Guides</a>
+					</li>
+				</ul>
+			</section>
+			
+			<section id="social">
+					<h2>WE'RE SOCIAL</h2>
+				
+				<div id="footerFacebook">
+					<div class="fb-like" data-send="true" data-width="370" data-show-faces="false"></div>
+				</div>
+				<div id="footerTwitter">
+				</div>
+				
+			</section>
+			
+			<div id="footerFloatRight">
+				<section id="donate">
+						<h2>DONATE TO THE LIBRARIES</h2>
+					<ul>
+						<li>
+							<a href="/about/friends/">Become a Friend of the Libraries</a>
+						</li>
+						<li>
+							<a href="/about/friends/donations/">Ways to Give</a>
+						</li>
+						<li>
+							<a href="https://www.mountaineerconnection.com/sslpage.aspx?pid=501&section=WVU%20Libraries">Give Online</a>
+						</li>
+					</ul>
+				</section>
+				<section>
+					<a href="http://www.facebook.com/pages/Morgantown-WV/WVU-Libraries/108610159200233"><img src="https://www.libraries.wvu.edu/images/2012/footer/socialIcons/icon_facebook.gif" alt="Facebook" /></a><a href="/about/friends/donations/"><img src="https://www.libraries.wvu.edu/images/2012/footer/socialIcons/icon_give.gif" alt="Give" /></a><a href="https://mix.wvu.edu/ "><img src="https://www.libraries.wvu.edu/images/2012/footer/socialIcons/icon_mix.gif" alt="Mix" /></a><a href="http://twitter.com/wvuLibraries"><img src="https://www.libraries.wvu.edu/images/2012/footer/socialIcons/icon_twitter.gif" alt="Twitter" /></a><a href="/rss/"><img src="https://www.libraries.wvu.edu/images/2012/footer/socialIcons/newrss.jpg" alt="RSS" /></a><a href="http://www.youtube.com/user/WVULibraries"><img src="https://www.libraries.wvu.edu/images/2012/footer/socialIcons/icon_youtube.gif" alt="YouTube" /></a>
+					<a href="/services/ask/"><img src="https://www.libraries.wvu.edu/images/2012/askALibrarianButton.png" alt="Ask a Librarian" /></a>
+				</section>
+			</div>
+			
+		</div>
+		
+		<address>
+			<p><a href="/about/copyright/" title="WVU Libraries Copyright">&copy; WVU Libraries</a> &nbsp;&nbsp; P.O. Box 6069 WVU &nbsp;&nbsp; 1549 University Ave. &nbsp;&nbsp; Morgantown, WV 26506-6069 &nbsp;&nbsp; Phone: <span class="phoneNumber">(304) 293-4040</span> &nbsp;&nbsp; Fax: (304) 293-6638
+		</address>
+	</footer>
+
+</body>
+
+</html>

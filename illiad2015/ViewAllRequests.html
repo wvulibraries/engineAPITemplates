@@ -1,0 +1,17 @@
+<#INCLUDE filename="template_header_preVars.html">
+<title>ILLiad - All Request</title>
+
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+
+	<!-- Facebook Open Graph tags -->
+	<meta property="og:title" content="ILLiad - All Request" />
+<#INCLUDE filename="template_header_postVars.html">
+<h1>ILLiad - All Request</h1>
+<#INCLUDE filename="template_mainContentAfterSectionHeader.html">
+<div class="default-table">			
+                <#TABLE name="ViewAllRequests" headerText="All Requests" noDataAction="ShowMessageRow" noDataMessage="No Requests" 
+                 column="TransactionNumber:Transaction" column="DocumentType:Type" column="Title" column="Author" column="TransactionStatus:Status">
+            </div>
+            
+<#INCLUDE filename="template_footer.html">

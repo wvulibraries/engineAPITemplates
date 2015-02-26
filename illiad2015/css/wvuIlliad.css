@@ -1,0 +1,8 @@
+body > footer #siteSearch label.searchOptions {
+margin-left: 10px;
+margin-right: 10px;
+}
+
+.logonLinkList {
+	list-style: none;
+}

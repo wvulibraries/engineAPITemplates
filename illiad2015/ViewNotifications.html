@@ -1,0 +1,18 @@
+<#INCLUDE filename="template_header_preVars.html">
+<title>ILLiad - Notifications</title>
+
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+
+  <!-- Facebook Open Graph tags -->
+  <meta property="og:title" content="ILLiad - Notifications" />
+<#INCLUDE filename="template_header_postVars.html">
+<h1>ILLiad - Notifications</h1>
+<#INCLUDE filename="template_mainContentAfterSectionHeader.html">
+
+			<a href="<#ACTION action="2" type="41" value="RSSID" valueType="lookup" absolutePath="false" includeSessionID="false">">Subscribe to Notifications Feed</a><br />
+			<div class="default-table">			
+				<#TABLE name="ViewNotifications" headerText="Notifications" maxRows="20" noDataAction="ShowMessageRow" noDataMessage="No Notifications">
+			</div>
+
+<#INCLUDE filename="template_footer.html">

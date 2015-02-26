@@ -1,0 +1,22 @@
+<#INCLUDE filename="template_header_preVars.html">
+<title>ILLiad - Electronic Delivery</title>
+
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+
+	<!-- Facebook Open Graph tags -->
+	<meta property="og:title" content="ILLiad - Electronic Delivery" />
+<#INCLUDE filename="template_header_postVars.html">
+<h1>ILLiad - Electronic Delivery</h1>
+<#INCLUDE filename="template_mainContentAfterSectionHeader.html">
+Articles posted to this page will remain accessible by the requestor for <b>30 days from the date of posting</b>.<br />
+ 		If, prior to this time, you no longer require the use of an article, you may delete it using the &quot;Delete&quot; link to the right of the article information.</p>
+    	<p>In the event that you accidentally delete an article from this web page, you may <a href="<#ACTION action="10" form="65">">undelete</a> articles or e-mail us at <#LOCALINFO name="GeneralEMailAddress"> to have them reset.</p>
+		
+		<div class="default-table">
+			<#TABLE name="ElectronicDelivery" headerText="Electronically Received Articles" column="TransactionNumber:Transaction" column="View" column="Size" column="Title" column="Author" column="Expires" column="Delete">
+			<br />					
+		</div>
+								
+		
+<#INCLUDE filename="template_footer.html">

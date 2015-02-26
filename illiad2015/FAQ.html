@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>WVU Libraries ILLiad</title>
+
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+
+	<!-- Facebook Open Graph tags -->
+	<meta property="og:title" content="About ILLiad" />
+	<!-- Facebook Open Graph tags (templates) -->
+	<meta property="og:type" content="university" />
+	<meta property="og:url" content="http://www.libraries.wvu.edu/services/" />
+	<meta property="og:image" content="" />
+	<meta property="og:site_name" content="WVU Libraries" />
+	<meta property="fb:admins" content="1021916351" />
+
+	<meta charset="UTF-8">
+
+<link rel="stylesheet" type="text/css" href="css/main.css" />
+	<script type="text/javascript" src="https://www.libraries.wvu.edu/javascript/2012/jquery/jquery.js"></script>
+	<script type="text/javascript" src="https://www.libraries.wvu.edu/javascript/2012/jquery/jquery.tweet.js"></script>
+	
+	<script type="text/javascript" src="https://www.libraries.wvu.edu/javascript/2012/modernizr.js"></script>
+	<!-- // <script type="text/javascript" src="https://www.libraries.wvu.edu/javascript/2012/html5.js"></script> -->
+	<script type="text/javascript" src="https://www.libraries.wvu.edu/javascript/2012/bootstrap.js"></script>
+
+	<!-- Add some HTML5 element support into IE 6 - 8 -->
+	<!--[if lt IE 9]>
+		<script type="text/javascript" src="https://www.libraries.wvu.edu/javascript/2012/html5.js"></script>
+	<![endif]-->
+
+	<!-- <script type="text/javascript" src="https://www.libraries.wvu.edu/javascript/2012/bootstrap/js/bootstrap.min.js"></script> -->
+	<!-- <link rel="stylesheet"                       type="text/css" href="https://www.libraries.wvu.edu/javascript/2012/bootstrap/css/bootstrap.min.css"/> -->
+	<link rel="stylesheet"                       type="text/css" href="https://www.libraries.wvu.edu/css/2012/bootstrap.css"/>
+	<link rel="stylesheet" type="text/css" href="https://www.libraries.wvu.edu/css/2012/common.less" />
+	<link rel="stylesheet" type="text/css" href="https://www.libraries.wvu.edu/css/2012/fonts.less" />
+	<link rel="stylesheet" type="text/css" href="https://www.libraries.wvu.edu/css/2012/print.css" media="print" />
+	
+	<link rel="stylesheet"      type="text/css" href="https://www.libraries.wvu.edu/css/2012/jquery.tweet.css" />
+	
+	<script type="text/javascript">
+	
+	$(document).ready(function() {
+
+		$("#username").focus();
+
+		// Footer 
+		$("#footerTwitter").tweet(
+			{
+				count: 1,
+				username: "wvulibraries",
+				loading_text: "Loading Twitter Feed ... "
+			}
+		);
+
+		// Header
+		if (!Modernizr.input.placeholder) {
+			$('input[type="search"], input[type="text"]', 'header').each(function () {
+				if (!$(this).val()) {
+					this.value = $(this).attr('placeholder');
+				}
+		
+				$(this).focus(function () {
+					if (this.value == $(this).attr('placeholder')) {
+						this.value = '';
+					}
+				});
+		
+				$(this).blur(function () {
+					if (this.value == '') {
+						this.value = $(this).attr('placeholder');
+					}
+				});
+		
+			});
+		}
+
+		var leftNavURLMatch = window.location.pathname; 
+
+		if (leftNavURLMatch.match(/[^\/]$/)) {
+			regex = /^(\/(.*?\/)+)(.*)$/;
+			if (leftNavURLMatch.match(regex)) {
+				leftNavURLMatch = RegExp.$1;
+			}
+		}
+		
+
+		var dirs = leftNavURLMatch.split("/");
+
+
+
+		for (I=0;I< dirs.length;I++) {
+			selected = false;
+
+			leftNavURLMatch = dirs.join("/") + "/";
+
+			leftNavURLMatch = leftNavURLMatch.replace(/\//g,"\\/");
+			myregexp = new RegExp("^"+leftNavURLMatch);
+			myregexp2 = new RegExp("^"+window.location.pathname+"$");
+
+			$('#contentContainerLeft ul li a').each(function(index) {
+
+				if ($(this).attr("href").match(myregexp2)) {
+					$(this).parent().addClass("leftNavSelected");
+					selected = true;
+					return( false );
+				}
+				else if ($(this).attr("href").match(myregexp)) {
+					$(this).parent().addClass("leftNavSelected");
+					selected = true;
+					return( false );
+				}
+			});
+
+
+			if (selected == true) {
+				break;
+			}
+
+			dirs.pop();
+
+		}
+
+
+
+	});
+
+	</script>
+	
+
+
+<link rel="stylesheet" type="text/css" href="https://www.libraries.wvu.edu/css/2012/home/main.less" />
+
+<script type="text/javascript">
+
+$(document).ready(function(){  
+
+    var rightH = $('#contentContainerRight').height();
+	var leftH  = $('#contentContainerLeft').height();
+	var midH   = $('#contentContainerMiddle').height();
+	
+	if (rightH >= leftH && rightH >= midH) {
+		$('#contentContainerLeft').css({  
+            'min-height': rightH
+        });
+		$('#contentContainerMiddle').css({  
+            'min-height': rightH
+        });
+	}
+	else if (leftH >= rightH && leftH >= midH) {
+		$('#contentContainerRight').css({  
+            'min-height': leftH
+        });
+		$('#contentContainerMiddle').css({  
+            'min-height': leftH
+        });
+	}
+	else if (midH >= rightH && midH >= leftH) {
+		$('#contentContainerRight').css({  
+            'min-height': midH
+        });
+		$('#contentContainerLeft').css({  
+            'min-height': midH
+        });
+	} 
+});
+
+</script>
+
+<link rel="stylesheet" type="text/css" href="https://www.libraries.wvu.edu/css/2012/1col.less" />
+
+</head>
+
+<body>
+
+	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+	  var js, fjs = d.getElementsByTagName(s)[0];
+	  if (d.getElementById(id)) return;
+	  js = d.createElement(s); js.id = id;
+	  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+	  fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
+	<header>
+		<div id="wvuMasthead">
+			<a href="http://www.wvu.edu"><img src="https://www.libraries.wvu.edu/images/2012/header/wvuLogo.png" alt="wvuLogo"/></a>
+			<ul>
+				<li>
+					<a href="http://www.wvu.edu/SiteIndex/" title="">A-Z Site Index</a>
+				</li>
+				<li>
+					<a href="http://www.wvu.edu/campusmap/" title="">Campus Map</a>
+				</li>
+				<li>
+					<a href="http://www.libraries.wvu.edu/about/directory/" title="">Directory</a>
+				</li>
+				<li>
+					<a href="http://www.libraries.wvu.edu/about/contactus/" title="">Contact Us</a>
+				</li>
+				<li>
+					<a href="http://www.libraries.wvu.edu/hours/" title="">Hours</a>
+				</li>
+				<li>
+					<a href="http://www.wvu.edu/" title="">WVU Home</a>
+				</li>
+			</ul>
+		</div>
+		
+		<div id="middleHeaderBar">
+
+			<h1><a href="http://www.libraries.wvu.edu/">L<span class="font-size-30pt">IBRARIES</span></a></h1>
+			<form method="GET" action="http://wvu.summon.serialssolutions.com/search">
+				<input type="hidden" name="s.fvf[]" value="ContentType,Newspaper Article,t" />
+				<input type="search" id="summonSearch" name="s.q" tabindex="1" placeholder="Search Summon: Books, eBooks, Videos, Articles, &amp; More" />
+				<button type="submit">
+					<span class="label">Search</span>
+				</button>
+
+			</form>
+		</div>
+		
+		<nav>
+			<ul>
+				<li>
+					<a href="http://www.libraries.wvu.edu/"><img src="https://www.libraries.wvu.edu/images/2012/header/homeSelected.png" alt="Home" /></a>
+				</li>
+				<li>
+					<a href="http://www.libraries.wvu.edu/libraries/" >LIBRARIES</a>
+				</li>
+				<li>
+					<a href="http://www.libraries.wvu.edu/collections/" >COLLECTIONS</a>
+				</li>
+				<li>
+					<a href="http://www.libraries.wvu.edu/instruction/" >INSTRUCTION</a>
+				</li>
+				<li>
+					<a href="http://www.libraries.wvu.edu/services/" >SERVICES</a>
+				</li>
+				<li>
+					<a href="http://www.libraries.wvu.edu/about/" >ABOUT</a>
+				</li>
+				
+			</ul>
+		</nav>
+		
+<a href="/services/ask/"><img src="https://www.libraries.wvu.edu/images/2012/askALibrarianButton.png" alt="Ask a Librarian" id="askALibrarian_header"/></a>
+		
+	</header>
+	
+	<div id="alertBar">
+		
+	</div>
+	
+	<div id="contentContainer">
+
+		<div id="contentContainerMiddle">
+			<header>
+				<h1>ILLiad - Edit Book Request</h1>
+			</header>	
+
+			<a name="contents"></a>
+					<h2>Answers to Frequently Asked Questions about ILLiad</h2>
+
+					
+						<ul>					
+							<li><a href="#what" target="_self">What is ILLiad?</a></li>
+							<li><a href="#better" target="_self">What is my ILLiad username and password?</a></li>
+							<li><a href="#disadvantage" target="_self">Why do I need a username and password to use ILLiad?</a></li>
+							<li><a href="#userid" target="_self">Who do I contact if I have problems with or questions about ILLiad?</a></li>
+							
+							
+
+						</ul>
+
+			
+<div id="faq-contents">
+	<a name="what"></a>
+	<div class="faq-item">
+		<div class="faq-item-box">
+			<h3>What is ILLiad?</h3>
+
+			<p>ILLiad is the electronic system you use to request an items from other libraries through Interlibrary Loan. </p>
+		</div>
+	</div>
+
+	<a name="better"></a>
+	<div class="faq-item">
+		<div class="faq-item-box">
+			<h3>What is my ILLiad username and password?</h3>
+
+			<p>
+				You use your WVU MyID username and password to access ILLiad.
+			</p>
+		</div>
+	</div>
+
+	<a name="disadvantage"></a>
+	<div class="faq-item">
+		<div class="faq-item-box">
+			<h3>Why do I need a username and password to use ILLiad?</h3>
+
+			<p>Your username and password allows us to give you secure access to information about your interlibrary loan requests. We can also edit your personal information such as your address or phone number. </p>
+		</div>
+	</div>
+
+	<a name="userid"></a>
+	<div class="faq-item">
+		<div class="faq-item-box">
+			<h3>Who do I contact if I have problems with or questions about ILLiad?</h3>
+
+			<p>You should contact the Library at which you set up your ILLiad account:</p>
+
+				<ul>
+
+					<li class="noBackground">Downtown Campus Library &emsp;		304-293-0368	&emsp;	<a href="mailto:illdowntown@mail.wvu.edu">illdowntown@mail.wvu.edu</a></li>
+
+					<li class="noBackground">Evansdale Library	&emsp;	&emsp; &emsp; &emsp;	304-293-9762	&emsp;	<a href="mailto:illevan@mail.wvu.edu">illevan@mail.wvu.edu</a></li>
+
+					<li class="noBackground">Health Sciences Library	&emsp;	&emsp; 304-293-1930	&emsp;	<a href="mailto:hslill@mail.wvu.edu">hslill@mail.wvu.edu</a></li>
+
+
+
+				</ul>
+
+
+
+
+		</div>
+	</div>
+	
+	
+	
+	9:14 AM 4/29/2014
+</div>
+</div>
+    <!-- Begin Footer -->
+	
+			
+		<footer id="toolBar">
+			<p>
+			</p>
+			<p></p>
+			<p>
+				<a href="mailto:Jessica.Tapia@mail.wvu.edu">Report an error on this page <img src="https://www.libraries.wvu.edu/images/2012/reportError.png" alt="Report Error" /></a>
+			</p>
+		</footer>
+	
+			
+	</div>
+	
+	<footer>
+		<section id="siteSearch">
+<!--			<span class="header">
+				<label for="SearchCriteria">Search Illiad</label>
+			</span>
+			
+		<form action="illiad.dll" name="Search" method="post">
+			<input type="hidden" name="IlliadForm" value="Search" />
+			<input id="SessionID" name="SessionID" type="hidden" value="" />
+			<input id="SearchCriteria" name="SearchCriteria" type="text" class="f-criteria" />				
+			<input type="submit" name="SubmitButton" value="Search" class="f-submit" />
+			<input name="SearchType" type="radio" id="SearchTypeActive" value="Active" checked class="f-searchType" /><label for="SearchTypeActive">Active</label>
+			<input name="SearchType" type="radio" id="SearchTypeAll" value="All" class="f-searchType" /><label for="SearchTypeAll">All</label>
+		</form>
+-->
+		</section>
+		
+		<div id="footerLinks">
+			<section id="popularResources">
+				<!-- These should really be in header blocks, but not allowed in footer -->
+				<h2>POPULAR RESOURCES</h2>
+				<ul>
+					<li>
+						<a href="http://mountainlynx.lib.wvu.edu" title="Library Catalog">Library Catalog</a>
+					</li>
+					<li>
+						<a href="http://illiad.lib.wvu.edu" title="Interlibrary Loan">Interlibrary Loan</a>
+					</li>
+					<li>
+						<a href="/ejournals/" title="eJournals">eJournals</a>
+					</li>
+					<li>
+						<a href="https://reserves.lib.wvu.edu" title="Reserves &amp; eReserves">Reserves</a>
+					</li>
+					<li>
+						<!-- <a href="http://www.libraries.wvu.edu/databases/cgi-bin/databases.pl?1185309093=invs" title="Refworks">Refworks</a> -->
+						<a href="http://systems.lib.wvu.edu/availableComputers" title="Available Computers">Available Computers</a>
+					</li>
+					<li>
+						<a href="/databases/" title="Databases">Databases</a>
+					</li>
+					<li>
+						<a href="http://ad4tq3gq5x.search.serialssolutions.com/?SS_Page=refiner&amp;SS_RefinerEditable=yes" title="Have a Citation? Find it @WVU">Find it @WVU</a>
+					</li>
+					<li>
+						<a href="http://libguides.wvu.edu/" title="Research Guides">Research Guides</a>
+					</li>
+				</ul>
+			</section>
+			
+			<section id="social">
+					<h2>WE'RE SOCIAL</h2>
+				
+				<div id="footerFacebook">
+					<div class="fb-like" data-send="true" data-width="370" data-show-faces="false"></div>
+				</div>
+				<div id="footerTwitter">
+				</div>
+				
+			</section>
+			
+			<div id="footerFloatRight">
+				<section id="donate">
+						<h2>DONATE TO THE LIBRARIES</h2>
+					<ul>
+						<li>
+							<a href="/about/friends/">Become a Friend of the Libraries</a>
+						</li>
+						<li>
+							<a href="/about/friends/donations/">Ways to Give</a>
+						</li>
+						<li>
+							<a href="https://www.mountaineerconnection.com/sslpage.aspx?pid=501&section=WVU%20Libraries">Give Online</a>
+						</li>
+					</ul>
+				</section>
+				<section>
+					<a href="http://www.facebook.com/pages/Morgantown-WV/WVU-Libraries/108610159200233"><img src="https://www.libraries.wvu.edu/images/2012/footer/socialIcons/icon_facebook.gif" alt="Facebook" /></a><a href="/about/friends/donations/"><img src="https://www.libraries.wvu.edu/images/2012/footer/socialIcons/icon_give.gif" alt="Give" /></a><a href="https://mix.wvu.edu/ "><img src="https://www.libraries.wvu.edu/images/2012/footer/socialIcons/icon_mix.gif" alt="Mix" /></a><a href="http://twitter.com/wvuLibraries"><img src="https://www.libraries.wvu.edu/images/2012/footer/socialIcons/icon_twitter.gif" alt="Twitter" /></a><a href="/rss/"><img src="https://www.libraries.wvu.edu/images/2012/footer/socialIcons/newrss.jpg" alt="RSS" /></a><a href="http://www.youtube.com/user/WVULibraries"><img src="https://www.libraries.wvu.edu/images/2012/footer/socialIcons/icon_youtube.gif" alt="YouTube" /></a>
+					<a href="/services/ask/"><img src="https://www.libraries.wvu.edu/images/2012/askALibrarianButton.png" alt="Ask a Librarian" /></a>
+				</section>
+			</div>
+			
+		</div>
+		
+		<address>
+			<p><a href="/about/copyright/" title="WVU Libraries Copyright">&copy; WVU Libraries</a> &nbsp;&nbsp; P.O. Box 6069 WVU &nbsp;&nbsp; 1549 University Ave. &nbsp;&nbsp; Morgantown, WV 26506-6069 &nbsp;&nbsp; Phone: <span class="phoneNumber">(304) 293-4040</span> &nbsp;&nbsp; Fax: (304) 293-6638
+		</address>
+	</footer>
+
+</body>
+
+</html>

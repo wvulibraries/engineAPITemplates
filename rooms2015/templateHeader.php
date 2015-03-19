@@ -24,7 +24,7 @@
 
         <!-- Local CSS -->
         <link href="https://lib.wvu.edu/css/2015/lib2.css" type="text/css" rel="stylesheet" />         
-        <link href="https://lib.wvu.edu/css/2015/rooms.css" type="text/css" rel="stylesheet">
+        <link href="{local var="roomResBaseDir"}/css/rooms.css" type="text/css" rel="stylesheet">
 
         <!-- JavaScripts -->
         <script type="text/javascript" src="https://lib.wvu.edu/javascript/2014/jquery-2.1.1.min.js"></script>

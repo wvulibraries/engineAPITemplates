@@ -132,15 +132,3 @@
                     </div>
         	</div>
         </header> 
-
-		<!-- Room Reservation Header -->
-        <div class="roomReservation">
-            <div class="wrap">
-                <h2>Room Reservations</h2>
-                <a class="userLogin roomTabletDesktop" href="#"><i class="fa fa-user"></i>User login</a>
-            </div>            
-        </div>
-
-        <!-- CMS Backpage Wrapper -->
-        <div class="wrap hpcard">
-            <section class="bp-body-1c">

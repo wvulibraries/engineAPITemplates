@@ -23,7 +23,7 @@ form.f-wrap-request {
 form.f-wrap-request label b {
     width: 100%;
 }    
-#StatusGroup, #Department, #NVTGC {
+#StatusGroup, #Department, #NVTGC, #AcceptNonEnglish, #AcceptAlternateEdition {
 	padding: 10px 2%;
 }
 #Department {
@@ -52,4 +52,54 @@ fieldset {
     border: none;
     margin: 0;
     padding: 0;
+}
+input.f-submit  {
+	display: inline-block;
+	padding: 10px 20px;
+	text-shadow: 2px 2px 4px #005DAA;
+	border-radius: 5px;
+	margin: 0px 10px 10px 0px;
+	background: none repeat scroll 0% 0% #39F;
+	color: #FFF;
+	border-width: 1px 1px 2px;
+	border-color: #005DAA;
+	text-decoration: none;
+	border-style: solid;
+	background: none repeat scroll 0% 0% #39F;
+	color: #FFF;
+	border-width: 1px 1px 2px;
+	border-color: #005DAA;
+	text-decoration: none;
+	border-style: solid;
+	display: inline-block;
+	padding: 10px 20px;
+	text-shadow: 2px 2px 4px #005DAA;
+	border-radius: 5px;
+}
+input.f-submit:hover {
+	background: #eeb111; 
+	color: #00447c; 
+	text-shadow: 2px 2px 4px #ffe894; 
+	border-color: #f47b20; 
+	border-width: 1px 1px 2px;
+    text-decoration: none;
+    border-style: solid;
+}
+form.f-wrap-request label input, form.f-wrap-request label textarea, form.f-wrap-request label select {
+    width: inherit;
+    float: left;
+    margin-left: inherit;
+}
+form.f-wrap-request label textarea {
+    resize: none;
+	display: block;
+	margin-bottom: 20px;
+	width: 95%;
+	max-width: 550px;
+}
+form.f-wrap-request div.f-submit-wrap {
+    padding: 0;
+}
+form.f-wrap-request input.f-submit {
+    margin: 0;
 }

@@ -1,3 +1,55 @@
 table th {
 	color: black;
 }
+#faq-contents .faq-item {
+	border-top: none;
+}
+#faq-contents .faq-item-box {
+    color: inherit;
+    padding: 0;
+    border-top: none;
+    background: #fff;
+}
+.default-table tbody td, th {
+	border-left: 1px solid #CCC;
+}	
+form.f-wrap-1 {
+	border-top: none;
+}	
+form.f-wrap-request {
+	border-top: none;
+	background: #fff;	
+}
+form.f-wrap-request label b {
+    width: 100%;
+}    
+#StatusGroup, #Department, #NVTGC {
+	padding: 10px 2%;
+}
+#Department {
+	max-width: 220px;
+}
+form.f-wrap-request div.req {
+	position: inherit;
+	display: block;
+	margin-bottom: 10px;
+}
+form.f-wrap-request label {
+	border-bottom: none;
+}
+form.f-wrap-request label .field .req {
+	position: relative;
+	top: 0;
+	left: 0;
+}	
+form.f-wrap-request fieldset {
+    margin: 0;
+}
+.bp-body input, .bp-body-1c input {
+    max-width: 220px;
+}    
+fieldset {
+    border: none;
+    margin: 0;
+    padding: 0;
+}

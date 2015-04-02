@@ -47,6 +47,8 @@
                 document.createElement('video');
             </script>
         <![endif]--> 
+        
+        <?php recurseInsert("headerIncludes.php","php") ?>
     </head>
     <body>
 		<header>

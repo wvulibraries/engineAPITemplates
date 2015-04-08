@@ -154,3 +154,7 @@
                     <?php } ?>
             </div>            
         </div>
+
+        <!-- Page Wrapper -->
+        <div class="wrap hpcard">
+            <section class="bp-body-1c">

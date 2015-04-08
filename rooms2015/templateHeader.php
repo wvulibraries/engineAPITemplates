@@ -138,7 +138,7 @@
         <!-- Room Reservation Header -->
         <div class="roomReservation">
             <div class="wrap">
-                <h2>Room Reservations</h2>
+                <h2><a href="/services/rooms/">Room Reservations</a></h2>
                     <?php if (is_empty(session::get("username"))) { ?>
                         <a class="userLogin roomTabletDesktop" href="{local var="loginURL"}">
                             <i class="fa fa-user"></i>

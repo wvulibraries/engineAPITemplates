@@ -5,8 +5,8 @@ if(!class_exists('EngineAPI')){
 $engine = EngineAPI::singleton();
 
 // Magpie Settings
-define('MAGPIE_DIR', EngineAPI::$engineVars['magpieDir']);
-define('MAGPIE_CACHE_DIR', '/tmp/magpie_cache');
+// define('MAGPIE_DIR', EngineAPI::$engineVars['magpieDir']);
+// define('MAGPIE_CACHE_DIR', '/tmp/magpie_cache');
 
 errorHandle::errorReporting(errorHandle::E_ALL);
 

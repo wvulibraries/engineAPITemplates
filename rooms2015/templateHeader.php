@@ -7,8 +7,8 @@
 		<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
         <meta name="HandheldFriendly" content="True">
         <meta name="MobileOptimized" content="320">
-		<meta name="keywords" content="{local var="currentDisplayObjectKeywords"}">
-		<meta name="description" content="{local var="currentDisplayObjectDescription"}">
+		<meta name="keywords" content="Room Reservation, Find A Room, Advanced Search, Study Rooms, Rooms by Building, Room Policies, Room Policy">
+		<meta name="description" content="Check availability or reserve rooms in the WVU Library by building, hour, or occupancy. View room photos, room policies, or search previous room reservations.">
     	<meta name="author" content="WVU Libraries">
 		<meta http-equiv="cleartype" content="on">
     	<link rel="shortcut icon" href="https://wvrhc.lib.wvu.edu/favicon.ico">

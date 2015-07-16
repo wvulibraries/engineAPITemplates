@@ -18,13 +18,13 @@
         <link rel="shortcut icon" href="https://wvrhc.lib.wvu.edu/favicon.ico">
 
         <!-- CSS -->
-        <link type="text/css" rel="stylesheet" href="stylesheets/variables.css"></link>
-        <link type="text/css" rel="stylesheet" href="stylesheets/wvu.css"></link>
-        <link type="text/css" rel="stylesheet" href="stylesheets/styles.css"></link>
+        <link type="text/css" rel="stylesheet" href="{local var="templateIncludes"}/stylesheets/variables.css"></link>
+        <link type="text/css" rel="stylesheet" href="{local var="templateIncludes"}/stylesheets/wvu.css"></link>
+        <link type="text/css" rel="stylesheet" href="{local var="templateIncludes"}/stylesheets/styles.css"></link>
 
         <!-- JavaScript -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-        <script src="javascripts/scripts.js"></script>
+        <script src="{local var="templateIncludes"}/javascripts/scripts.js"></script>
 
         <!-- External CSS: Helvetica & Font Awesome -->
         <link type="text/css" rel="stylesheet" href="https://fast.fonts.net/cssapi/36d8cd92-7cc7-499b-b169-0eed9d670283.css"></link>

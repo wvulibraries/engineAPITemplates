@@ -1,0 +1,216 @@
+/*********************************************************************
+    Variables
+**********************************************************************/
+/*********************************************************************
+    480px or less
+**********************************************************************/
+html, body, form, nav, ul, div {
+  display: block;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: "Helvetica Neue", "Helvetica","Roboto", Arial, sans-serif; }
+
+.webapp-header {
+  background: url(https://lib.wvu.edu/images/2014/wise.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-color: #fff;
+  height: auto;
+  display: block;
+  overflow: hidden; }
+  .webapp-header h1 {
+    color: #fff;
+    font-size: 3em;
+    font-weight: 400;
+    display: inline-block;
+    margin: 0;
+    padding: 0.5em 0;
+    float: center; }
+    .webapp-header h1 a {
+      color: #fff;
+      text-decoration: none;
+      text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.75); }
+      .webapp-header h1 a:hover {
+        text-decoration: underline; }
+
+#main-container {
+  margin: 40px 0; }
+
+.sticky-header {
+  background: #edecec;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 3;
+  width: 100%;
+  box-sizing: content-box;
+  box-shadow: 0px 0px 75px rgba(0, 0, 0, 0.5); }
+  .sticky-header .sticky-header-nav ul {
+    transition: all 0.2s ease;
+    list-style-type: none; }
+    .sticky-header .sticky-header-nav ul li {
+      display: inline-block;
+      float: left;
+      margin: 0 40px 0 0; }
+      .sticky-header .sticky-header-nav ul li a {
+        font-size: 18px;
+        padding: 4px 0 5px 0;
+        display: block;
+        color: #fff;
+        margin: 0px; }
+    .sticky-header .sticky-header-nav ul li:last-child {
+      margin-right: 0; }
+  .sticky-header .sticky-header-search .search-query-form {
+    transition: all 0.2s ease;
+    max-width: 100%; }
+  .sticky-header .sticky-header-filter .sticky-header-filter-sidebar {
+    transition: all 0.2s ease; }
+  .sticky-header .sticky-header a {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    display: block; }
+  .sticky-header img {
+    width: auto;
+    height: 100%;
+    max-width: 320px; }
+  .sticky-header .tabBar {
+    width: 25%;
+    float: left;
+    height: 55px; }
+    .sticky-header .tabBar a {
+      display: block;
+      height: 35px;
+      margin: 10px 0px; }
+
+/* Toggles */
+.tabbarToggle {
+  position: absolute;
+  bottom: 55px;
+  background: #337AB7;
+  width: 100%;
+  margin: 0;
+  left: 0;
+  padding: 5%;
+  margin-left: 0;
+  border-top: 2px solid #63a0d4;
+  height: auto;
+  overflow: hidden;
+  display: inline-block; }
+
+.tabbarToggle2 {
+  bottom: 55px;
+  position: fixed;
+  background: #337AB7;
+  width: 100%;
+  margin: 0;
+  left: 0;
+  padding: 5%;
+  margin-left: 0;
+  overflow-y: scroll;
+  display: inline-block;
+  border-top: 2px solid #63a0d4; }
+
+.tabbarToggleSearch {
+  height: auto;
+  padding: 5%; }
+
+.tbwrap {
+  width: 100%;
+  margin: 0px auto;
+  display: block;
+  height: auto; }
+
+.tabbarBlue {
+  background: #337AB7; }
+
+.hiding {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden; }
+
+.destroy {
+  display: none;
+  /* Only used for mobile/n on-accessibility issues */ }
+
+#main-container .row #sidebar {
+  display: none; }
+
+/*********************************************************************
+	768px to 1024px
+**********************************************************************/
+@media screen and (min-width: 768px) {
+  #main-container .row #sidebar {
+    display: block; }
+
+  .tabbarBlue {
+    background: none; }
+
+  .tbwrap {
+    width: 90%; }
+
+  .sticky-header {
+    height: 35px;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    z-index: 3;
+    border-top: none;
+    border-bottom: 1px solid #d3d3d3;
+    box-shadow: none;
+    padding: 10px 0; }
+    .sticky-header .tabBar {
+      width: 50%; }
+      .sticky-header .tabBar a {
+        margin: 0; }
+    .sticky-header .sticky-header-top {
+      display: none; }
+    .sticky-header .sticky-header-filter {
+      display: none; }
+    .sticky-header .sticky-header-nav {
+      background: none; }
+      .sticky-header .sticky-header-nav .tabbarToggle {
+        padding: 0; }
+      .sticky-header .sticky-header-nav ul {
+        list-style-type: none;
+        margin-left: 60px;
+        background: none;
+        position: relative;
+        border-top: none;
+        bottom: 0; }
+        .sticky-header .sticky-header-nav ul li {
+          display: inline-block;
+          float: left;
+          margin: 0 40px 0 0; }
+          .sticky-header .sticky-header-nav ul li a {
+            font-size: 18px;
+            padding: 4px 0 5px 0;
+            display: block;
+            color: #337AB7; }
+        .sticky-header .sticky-header-nav ul li:last-child {
+          margin-right: 0; }
+      .sticky-header .sticky-header-nav #menu-toggle {
+        display: none; }
+    .sticky-header .sticky-header-search .search-query-form {
+      background: none;
+      position: relative;
+      border-top: none;
+      bottom: 0;
+      max-width: 640px;
+      padding: 0; }
+    .sticky-header .sticky-header-search #search-toggle {
+      display: none; } }
+/*********************************************************************
+	1024px and up
+**********************************************************************/
+@media screen and (min-width: 1024px) {
+  .webapp-header h1 {
+    margin: 0 0 0 60px;
+    float: left; } }
+
+/*# sourceMappingURL=styles.css.map */

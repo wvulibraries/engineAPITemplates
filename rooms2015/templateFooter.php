@@ -1,75 +1,68 @@
              </section>
 		</div>
 
-		<!-- Footer -->
-    	<footer id="footer">
-		    <div class="wrap">
-
-		        <!-- Site Footer -->
-		        <div class="school-footer">
-		            <p><span class="footerTitle">WVU <strong>Libraries</strong></span><br>
-						West Virginia University<br>
-						1549 University Ave. | P.O. Box 6069<br>
-						Morgantown, WV 26506-6069<br>
-						Phone: <a href="tel:13042934040">1-304-293-4040</a><br>
-						Fax: 1-304-293-6638<br><br>
-		            <em>&copy; West Virginia University. Last modified {date format="F j, Y" time="<?php print filemtime($_SERVER['SCRIPT_FILENAME']); ?>"}. <span class="disclaimer">West Virginia University is an Equal Opportunity/Affirmative Action Institution.</span></em></p>
-		        </div>
-
-		        <!-- WVU Footer -->
-		        <div class="wvu-footer">
-		            <ul class="wvuFooterSites">
-		            	<li>
-		            		<a href="http://www.wvuf.org/" target="_blank">Give</a>
-	            		</li>
-	            		<li>
-	            			<a href="http://itunes.wvu.edu/" target="_blank">iTunes U</a>
-	            		</li>
-		                <li>
-		                    <a target="_blank" href="http://mix.wvu.edu/">MIX</a>
-		                </li>
-		                <li>
-		                    <a target="_blank" href="http://careerservices.wvu.edu/mountaineertraklogins">MTRAK</a>
-		                </li>
-
-		                <li>
-		                    <a target="_blank" href="http://myaccess.wvu.edu/">My Access</a>
-		                </li>
-		                <li>
-		                    <a target="_blank" href="http://emergency.wvu.edu/alert/">WVU Alert</a>
-		                </li>
-		                <li><a href="http://wvutoday.wvu.edu" target="_blank">WVU Today</a></li>
-		            </ul>
+ <!-- Footer -->
+        <footer id="footer">
+            <div class="wrap">
+                <div class="school-footer">
+                    <p><a href="https://lib.wvu.edu" class="footerTitle">WVU <strong>Libraries</strong></a><br>
+                        West Virginia University<br>
+                        1549 University Ave. | P.O. Box 6069<br>
+                        Morgantown, WV 26506-6069<br>
+                        Phone: <a href="tel:13042934040">1-304-293-4040</a><br>
+                        Fax: 1-304-293-6638<br><br>
+                    <em>&copy; West Virginia University. <span class="disclaimer">West Virginia University is an Equal Opportunity/Affirmative Action Institution.</span></em></p>
+                </div>
+                <div class="wvu-footer">
+                    <ul class="wvuFooterSites">
+                        <nobr>                        
+                            <li><a href="http://www.wvu.edu/SiteIndex/">A-Z Site Index</a></li>
+                            <li><a href="http://www.wvu.edu/CampusMap/">Campus Map</a></li>
+                            <li><a href="http://www.hr.wvu.edu/wvu_jobs">Jobs</a></li>
+                            <li><a href="http://directory.wvu.edu/">Directory</a></li>
+                        </nobr>
+                        <nobr>
+                            <li><a href="http://www.wvuf.org/">Give</a></li>
+                            <li><a href="http://myaccess.wvu.edu/">MyAccess</a></li>
+                            <li><a href="http://careerservices.wvu.edu/">MountaineerTRAK</a></li>
+                        </nobr>
+                        <nobr>                            
+                            <li><a href="http://emergency.wvu.edu/alert/">WVU Alert</a></li>
+                            <li><a href="http://wvutoday.wvu.edu">WVU Today</a></li>
+                            <li><a href="http://mix.wvu.edu/">MIX</a></li>
+                        </nobr>
+                    </ul>
+                    <div style="clear:both;"></div>
                     <ul class="wvuFooterSocial">
                         <li>
-						    <a class="socmedia" target="_blank" href="http://www.facebook.com/WVULibraries">
-						        <img src="https://lib.wvu.edu//images/2014/wvufacebook.png" alt="Facebook" title="Facebook"></img>
-						    </a>
-						</li>
-						<li>
-						    <a class="socmedia" href="https://plus.google.com/100326194366145492876" rel="publisher" target="_blank">
-						    	<img src="https://lib.wvu.edu//images/2014/wvugoogleplus.png" alt="Google+" title="Google+"</img>
-							</a>
-						</li>
-						<li>
-							<a class="socmedia" href="http://instagram.com/wvulibrarianlinda" target="_blank">
-								<img src="https://lib.wvu.edu//images/2014/instagram.png" alt="Instagram" title="Instagram"</img>
-							</a>
-						</li>			                
-						<li>
-						    <a class="socmedia" target="_blank" href="https://twitter.com/wvuLibraries">
-						        <img src="https://lib.wvu.edu//images/2014/wvutwitter.png" alt="Twitter" title="Twitter"></img>
-						    </a>
-						</li>
-						<li>
-						    <a class="socmedia" target="_blank" href="http://www.youtube.com/WVULibraries">
-						        <img src="https://lib.wvu.edu/images/2014/wvuyoutube.png" alt="Youtube" title="Youtube"></img>
-						    </a>
-						</li>
+                            <a class="socmedia" target="_blank" href="http://www.facebook.com/WVULibraries">
+                                <img src="https://lib.wvu.edu/images/2015/facebook.png" alt="Facebook" title="Facebook">
+                            </a>
+                        </li>
+                        <li>
+                            <a class="socmedia" href="https://plus.google.com/100326194366145492876" rel="publisher" target="_blank">
+                                <img src="https://lib.wvu.edu/images/2015/google.png" alt="Google+" title="Google+">
+                            </a>
+                        </li>
+                        <li>
+                            <a class="socmedia" href="http://instagram.com/wvulibrarianlinda" target="_blank">
+                                <img src="https://lib.wvu.edu/images/2015/instagram.png" alt="Instagram" title="Instagram">
+                            </a>
+                        </li>                           
+                        <li>
+                            <a class="socmedia" target="_blank" href="https://twitter.com/wvuLibraries">
+                                <img src="https://lib.wvu.edu/images/2015/twitter.png" alt="Twitter" title="Twitter">
+                            </a>
+                        </li>
+                        <li>
+                            <a class="socmedia" target="_blank" href="http://www.youtube.com/WVULibraries">
+                                <img src="https://lib.wvu.edu/images/2015/youtube.png" alt="Youtube" title="Youtube">
+                            </a>
+                        </li>
                     </ul>
-		        </div>
-		    </div>
-		</footer>
+                </div>
+            </div>
+        </footer>
 		<script>
 		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

@@ -14,7 +14,7 @@
     	<link rel="shortcut icon" href="https://wvrhc.lib.wvu.edu/favicon.ico">
 
         <!-- CMS CSS -->
-        <link href="https://lib.wvu.edu/css/2014/wvu.css" type="text/css" rel="stylesheet" /> 
+        <link href="https://lib.wvu.edu/css/2015/wvu.css" type="text/css" rel="stylesheet" /> 
         <link href="https://lib.wvu.edu/css/2014/ilstyles.css" type="text/css" rel="stylesheet" />
         <link href="https://lib.wvu.edu/css/2014/safari.css" type="text/css" rel="stylesheet" />
 
@@ -28,7 +28,7 @@
 
         <!-- JavaScripts -->
         <script type="text/javascript" src="https://lib.wvu.edu/javascript/2014/jquery-2.1.1.min.js"></script>
-        <script type="text/javascript" src="https://lib.wvu.edu/javascript/2014/scripts.js"></script>
+        <script type="text/javascript" src="https://lib.wvu.edu/javascript/2015/scripts.js"></script>
 
 		<!-- CSS Attribute/CSS Media Query/CSS Psuedo-Class/HTML Semantic Elements fallback for less than IE9 -->
         <!--[if IE 9]>
@@ -50,98 +50,82 @@
         
         <?php recurseInsert("headerIncludes.php","php") ?>
     </head>
-    <body>
-        <!-- Ask A Librarian  -->
-        <div class="ask"><a href="http://westvirginia.libanswers.com/"><img title="Ask A Librarian" alt="Ask A Librarian" src="https://lib.wvu.edu/images/2014/ask.png"></a></div>
-        
-		<header>
 
-			<!-- WVU Header -->
-			<div class="wvu-header mobile wvubottom">
-				<a href="#" id="wvutoggle"><img alt="West Virginia Univeristy" title="West Virginia Univeristy" src="https://lib.wvu.edu//images/2014/wvu_logo.png"></a>
-				<a href="http://www.wvu.edu" class=" wvu-header-logo tablet"><img alt="West Virginia Univeristy" title="West Virginia Univeristy" src="https://lib.wvu.edu//images/2014/wvu_logo.png"></a>
-			    <ul class="list">
-			        <li><a class="links" href="http://www.wvu.edu/SiteIndex/">A-Z Site Index</a></li>
-	                <li><a class="links" href="http://www.wvu.edu/campusmap/">Campus Maps</a></li>
-	                <li><a class="links" href="http://jobs.wvu.edu/">Jobs</a></li>
-	                <li><a class="links" href="https://lib.wvu.edu/about/directory/">Directory</a></li>
-                    <li><a class="links" href="https://lib.wvu.edu/about/contactus/">Contact Us</a></li>
-					<li><a class="links" href="https://lib.wvu.edu/hours/" title="">Library Hours</a></li>
-					<li><a class="links" href="http://www.wvu.edu/">WVU Home</a></li>
-			    </ul>
-			</div>
-			<div class="wvu-header tablet wvubottom">
-				<div class="wrap">
-					<a href="http://www.wvu.edu" class="wvu-header-logo"><img alt="West Virginia Univeristy" title="West Virginia Univeristy" src="https://lib.wvu.edu//images/2014/wvu_logo.png"></a>
-				    <ul class="wvu-header-mobile-list">
-				        <li><a href="http://www.wvu.edu/SiteIndex/">A-Z Site Index</a></li>
-		                <li><a href="http://www.wvu.edu/campusmap/">Campus Maps</a></li>
-		                <li><a href="http://jobs.wvu.edu/">Jobs</a></li>
-		                <li><a href="https://lib.wvu.edu/about/directory/">Directory</a></li>
-                        <li><a href="https://lib.wvu.edu/about/contactus/">Contact Us</a></li>
-						<li><a href="https://lib.wvu.edu/hours/" title="">Library Hours</a></li>
-				    </ul>
-				</div>
-			</div>
+        <body>
 
-        	<!-- Image Background -->
-        	<div class="backpage-wrapper">
-
-        		<!-- Site Header, Social Media, and Navigation -->
-                    <div class="site-header">
-                        <div class="site-header-top">
-                            <div class="site-header-title">
-                                <h1><a href="/">WVU Libraries</a></h1>
-                            </div>
-                            <ul class="site-header-social">
-                                <li>
-                                    <a class="socmedia" target="_blank" href="http://www.facebook.com/WVULibraries">
-                                        <img src="https://lib.wvu.edu/images/2014/wvufacebook.png" alt="Facebook" title="Facebook"></img>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="socmedia" href="https://plus.google.com/100326194366145492876" rel="publisher" target="_blank">
-                                        <img src="https://lib.wvu.edu/images/2014/wvugoogleplus.png" alt="Google+" title="Google+"</img>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="socmedia" href="http://instagram.com/wvulibrarianlinda" target="_blank">
-                                        <img src="https://lib.wvu.edu/images/2014/instagram.png" alt="Instagram" title="Instagram"</img>
-                                    </a>
-                                </li>			                
-                                <li>
-                                    <a class="socmedia" target="_blank" href="https://twitter.com/wvuLibraries">
-                                        <img src="https://lib.wvu.edu/images/2014/wvutwitter.png" alt="Twitter" title="Twitter"></img>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="socmedia" target="_blank" href="http://www.youtube.com/WVULibraries">
-                                        <img src="https://lib.wvu.edu/images/2014/wvuyoutube.png" alt="Youtube" title="Youtube"></img>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                        <nav class="site-header-nav">
-                            <ul>
-                                <li id="toggle"><i class="fa fa-bars"></i><i class="fa fa-times"></i> &nbsp; Menu</span></li>
-                                <li class="navtoggle home"><a href="http://mountainlynx.lib.wvu.edu/vwebv/myAccount?sk=m"><span class="navtitle">Renew Books</span></a></li>
-                                <li class="navtoggle"><a href="/about/"><i class="fa fa-info-circle"></i><span class="navtitle">About Us</span></a></li>
-                                <li class="navtoggle"><a href="https://lib.wvu.edu/collections/"><i class="fa fa-inbox"></i><span class="navtitle">Collections</span></a></li>
-                                <li class="navtoggle"><a href="/instruction"><i class="fa fa-graduation-cap"></i><span class="navtitle">Instruction</span></a></li>
-                                <li class="navtoggle"><a href="https://lib.wvu.edu/about/news/"><i class="fa fa-rss"></i><span class="navtitle">News</span></a></li>
-                                <li class="navtoggle"><a href="/services/"><i class="fa fa-cog"></i><span class="navtitle">Services</span></a></li>
-                                <li class="navtoggle"><a href="/about/contactus/"><i class="fa fa-question-circle"></i><span class="navtitle">Contact Us</span></a></li>
-                                <li class="navtoggle"><a href="/about/giving/"><i class="fa fa-heart"></i><span class="navtitle">Give</span></a></li>
-                            </ul>
-                        </nav>
-                    </div>
-        	</div>
-        </header> 
-
-        <!-- Room Reservation Header -->
-        <div class="roomReservation">
+        <!-- WVU Header -->
+        <div class="wvu-header mobile wvubottom">
+            <a href="#" id="wvutoggle" class="wvu-masthead__logo wvu-masthead__logo--w-signature">
+                <img src="https://lib.wvu.edu/images/2015/wvulogo.svg" alt="WVU Libraries">
+                <i class="fa fa-chevron-down"></i>
+                <i class="fa fa-chevron-up"></i>    
+            </a>
+            <ul class="list">
+                <li><a class="links" href="https://lib.wvu.edu/about/">About</a></li>
+                <li><a class="links" href="https://lib.wvu.edu/collections/">Collections</a></li>
+                <li><a class="links" href="https://lib.wvu.edu/instruction">Instruction</a></li>
+                <li><a class="links" href="https://lib.wvu.edu/about/news/">News</a></li>
+                <li><a class="links" href="https://lib.wvu.edu/services/">Services</a></li>
+                <li><a class="links" href="https://lib.wvu.edu/about/contactus/">Contact</a></li>
+                <li><a class="links" href="https://lib.wvu.edu/about/giving/">Give</a></li>
+                <li><a class="links" href="https://lib.wvu.edu/">Library Home</a></li>
+            </ul>
+        </div>
+        <div class="wvu-header tablet wvubottom">
             <div class="wrap">
-                <h2><a href="/services/rooms/">Room Reservations</a></h2>
+                <a href="https://lib.wvu.edu" class="wvu-header-logo wvu-masthead__logo wvu-masthead__logo--w-signature">
+                    <span class="wvu-masthead-title wvu-masthead__title--w-signature">Libraries</span>
+                </a>
+                <ul class="wvu-header-mobile-list">
+                    <li><a href="https://lib.wvu.edu/about/">About</a></li>
+                    <li><a href="https://lib.wvu.edu/collections/">Collections</a></li>
+                    <li><a href="https://lib.wvu.edu/instruction">Instruction</a></li>
+                    <li><a href="https://lib.wvu.edu/about/news/">News</a></li>
+                    <li><a href="https://lib.wvu.edu/services/">Services</a></li>
+                    <li><a href="https://lib.wvu.edu/about/contactus/">Contact</a></li>
+                    <li><a href="https://lib.wvu.edu/about/giving/">Give</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Collection Header -->
+        <div class="collection-header">
+            <div class="wrap"> 
+                <h1 class="collection-header-title">
+                    <a href="https://lib.wvu.edu/services/rooms/">Room Reservations</a>
+                </h1>
+            </div>
+        </div>
+
+        <!-- Website Tab Bar -->
+        <div class="sticky-header">
+            <div class="tbwrap"> 
+                <div class="sticky-header-nav tabBar">
+                    <a href="https://lib.wvu.edu/services/rooms/">
+                        <img src="https://lib.wvu.edu/images/2015/search.svg" alt="Search" id="search-toggle1">
+                    </a>
+                </div>
+                <div class="sticky-header-top tabBar">
+                    <a href="https://lib.wvu.edu/services/rooms/find/">
+                        <img src="https://lib.wvu.edu/images/2015/gear.svg" alt="Back to Top">
+                    </a>
+                </div>
+                <div class="sticky-header-filter tabBar">
+                    <?php if (is_empty(session::get("username"))) { ?>
+                        <a class="userLogin roomTabletDesktop" href="https://lib.wvu.edu/engineIncludes/login-4.0.php?page={phpself query="true"}">
+                            <img src="https://lib.wvu.edu/images/2015/user.svg" alt="Search" id="filter-toggle1">
+                        </a>
+                    <?php } else { ?>
+                        <a class="userLogin roomTabletDesktop" href="{engine var="logoutPage"}?">
+                            <img src="https://lib.wvu.edu/images/2015/user.svg" alt="Search" id="filter-toggle1">
+                        </a>                
+                    <?php } ?>
+                    </div>
+                </div>
+                <div class="sticky-header-search tabBar">
+                    <a href="https://lib.wvu.edu/services/rooms/policies/">
+                        <img src="https://lib.wvu.edu/images/2015/alert.svg" alt="Search" id="search-toggle1">
+                    </a>
                     <?php if (is_empty(session::get("username"))) { ?>
                         <a class="userLogin roomTabletDesktop" href="https://lib.wvu.edu/engineIncludes/login-4.0.php?page={phpself query="true"}">
                             <i class="fa fa-user"></i>
@@ -155,7 +139,8 @@
                             <i class="fa fa-check"></i>My Reservations
                         </a>
                     <?php } ?>
-            </div>            
+                </div>
+            </div>
         </div>
 
         <!-- Page Wrapper -->

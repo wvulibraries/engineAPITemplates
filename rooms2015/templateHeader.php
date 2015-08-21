@@ -134,7 +134,6 @@
                             <img src="https://lib.wvu.edu/images/2015/user.svg" alt="Search" id="filter-toggle1">
                         </a>                
                     <?php } ?>
-                    </div>
                 </div>
                 <div class="sticky-header-search tabBar">
                     <a href="https://lib.wvu.edu/services/rooms/policies/">

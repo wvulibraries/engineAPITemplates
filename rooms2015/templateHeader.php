@@ -105,6 +105,19 @@
                     <a href="https://lib.wvu.edu/services/rooms/">
                         <img src="https://lib.wvu.edu/images/2015/search.svg" alt="Search" id="search-toggle1">
                     </a>
+                    <?php if (is_empty(session::get("username"))) { ?>
+                        <a class="userLogin roomTabletDesktop" href="https://lib.wvu.edu/engineIncludes/login-4.0.php?page={phpself query="true"}">
+                            <i class="fa fa-user"></i>
+                            User Login
+                        </a>
+                    <?php } else { ?>
+                        <a class="userLogin roomTabletDesktop" href="{engine var="logoutPage"}?">
+                            <i class="fa fa-user"></i>User Logout
+                        </a>                
+                        <a class="userLogin roomTabletDesktop" href="{local var="roomReservationHome"}/calendar/user/" class="roomMobile bSubmit">
+                            <i class="fa fa-check"></i>My Reservations
+                        </a>
+                    <?php } ?>
                 </div>
                 <div class="sticky-header-top tabBar">
                     <a href="https://lib.wvu.edu/services/rooms/find/">
@@ -127,19 +140,6 @@
                     <a href="https://lib.wvu.edu/services/rooms/policies/">
                         <img src="https://lib.wvu.edu/images/2015/alert.svg" alt="Search" id="search-toggle1">
                     </a>
-                    <?php if (is_empty(session::get("username"))) { ?>
-                        <a class="userLogin roomTabletDesktop" href="https://lib.wvu.edu/engineIncludes/login-4.0.php?page={phpself query="true"}">
-                            <i class="fa fa-user"></i>
-                            User Login
-                        </a>
-                    <?php } else { ?>
-                        <a class="userLogin roomTabletDesktop" href="{engine var="logoutPage"}?">
-                            <i class="fa fa-user"></i>User Logout
-                        </a>                
-                        <a class="userLogin roomTabletDesktop" href="{local var="roomReservationHome"}/calendar/user/" class="roomMobile bSubmit">
-                            <i class="fa fa-check"></i>My Reservations
-                        </a>
-                    <?php } ?>
                 </div>
             </div>
         </div>

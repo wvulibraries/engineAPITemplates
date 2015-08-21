@@ -16,6 +16,7 @@
         <!-- CMS CSS -->
         <link href="https://lib.wvu.edu/css/2015/wvu.css" type="text/css" rel="stylesheet" /> 
         <link href="https://lib.wvu.edu/css/2014/ilstyles.css" type="text/css" rel="stylesheet" />
+        <link href="https://lib.wvu.edu/css/2015/styles.css" type="text/css" rel="stylesheet" />
         <link href="https://lib.wvu.edu/css/2014/safari.css" type="text/css" rel="stylesheet" />
 
         <!-- External CSS -->

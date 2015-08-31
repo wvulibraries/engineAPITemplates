@@ -23,11 +23,7 @@
 <body>
 
  <!-- WebApp Header -->
-	<div class="webapp-header">
-	    <div class="wrap">
-	        <h1><a href="{local var="appURL"}">{local var="appTitle"}</a></h1>
-	    </div>
-	</div>
+    <?php recurseInsert("includes/appHeader.php","php") ?>
 
  <!-- Navigation -->
     <?php recurseInsert("includes/nav.php","php") ?>

@@ -116,7 +116,7 @@
                     <span class="wvu-masthead-title wvu-masthead__title--w-signature">Libraries</span>
                 </a>
                 <ul class="site-header-social tablet verytop">
-                    {eapi_include type="php_inline" file="assets/socialMedia.html"}
+                    <?php recurseInsert("assets/socialMedia.html","php") ?>
                 </ul>
                 <!-- Enable after full branding
                 <ul class="wvu-header-mobile-list">

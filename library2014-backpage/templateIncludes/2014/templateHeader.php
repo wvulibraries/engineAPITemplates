@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>{local var="currentDisplayObjectTitle"} | <?php recurseInsert("assets/webtitle.html","php"); ?></title>
+        <title>{local var="currentDisplayObjectTitle"} | WVU Libraries </title>
 
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">

@@ -90,7 +90,7 @@
     
     <body>
         <!-- Ask A Librarian  -->
-        <div class="ask"><a href="{eapi_include type="php_inline" file="assets/ask.html"}"><img title="Ask A Librarian" alt="Ask A Librarian" src="/images/2014/ask.png"></a></div>
+        <div class="ask"><a href="http://westvirginia.libanswers.com/"><img title="Ask A Librarian" alt="Ask A Librarian" src="/images/2014/ask.png"></a></div>
         
         <!-- WVU Header -->
         <div class="wvu-header mobile wvubottom">

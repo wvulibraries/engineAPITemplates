@@ -3,7 +3,7 @@
 		<hr>
 
 		<footer>
-			<p>&copy; Organization 2012</p>
+			<p>&copy; WVU Libraries  <?php print date("Y"); ?></p>
 		</footer>
 
 	</div> <!-- /.container-fluid -->

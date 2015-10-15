@@ -12,7 +12,7 @@
 		}
 	</style>
 	<link rel="stylesheet" type="text/css" href="/javascript/distribution/bootstrap/css/bootstrap-responsive.min.css">
-	<script type="text/javascript" src="/javascript/distribution/jquery-1.9.1.min.js"></script>
+	<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
 	<?php recurseInsert("headerIncludes.php","php") ?>
 </head>
 

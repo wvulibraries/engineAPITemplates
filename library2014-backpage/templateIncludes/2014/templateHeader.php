@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>{local var="currentDisplayObjectTitle"} | <?php recurseInsert("assets/webtitle.html","php"); ?></title>
+        <title>{local var="currentDisplayObjectTitle"} | WVU Libraries </title>
 
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -90,7 +90,7 @@
     
     <body>
         <!-- Ask A Librarian  -->
-        <div class="ask"><a href="{eapi_include type="php_inline" file="assets/ask.html"}"><img title="Ask A Librarian" alt="Ask A Librarian" src="/images/2014/ask.png"></a></div>
+        <div class="ask"><a href="http://westvirginia.libanswers.com/"><img title="Ask A Librarian" alt="Ask A Librarian" src="/images/2014/ask.png"></a></div>
         
         <!-- WVU Header -->
         <div class="wvu-header mobile wvubottom">

@@ -16,8 +16,20 @@
 		        <!-- Site Footer -->
 
 		        <div class="school-footer">
-		            <p>{eapi_include type="php_inline" file="assets/footerinfo.php"}
-		            <em>&copy; West Virginia University. Last modified {date format="F j, Y" time="<?php print filemtime($_SERVER['SCRIPT_FILENAME']); ?>"}. <span class="disclaimer">West Virginia University is an Equal Opportunity/Affirmative Action Institution.</span></em></p>
+		            <p>
+		            	<span class="footerTitle">WVU <strong>Libraries</strong></span><br>
+					West Virginia University<br>
+					1549 University Ave. | P.O. Box 6069<br>
+					Morgantown, WV 26506-6069<br>
+					Phone: <a href="tel:13042934040">1-304-293-4040</a><br>
+					Fax: 1-304-293-6638<br><br>
+		            
+			        <em>
+			            &copy; West Virginia University. 
+			            Last modified {date format="F j, Y" time="<?php print filemtime($_SERVER['SCRIPT_FILENAME']); ?>"}. 
+			            <span class="disclaimer"> West Virginia University is an Equal Opportunity/Affirmative Action Institution. </span>
+			        </em>
+		            </p>
 		        </div>
 
 		        <!-- WVU Footer -->

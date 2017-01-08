@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!-- nagios check -->
 <html lang="en">
     <head>
     <title>Room Reservations | WVU Libraries</title>

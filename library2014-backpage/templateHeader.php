@@ -7,16 +7,9 @@
 	</div>
 </header> 
 
-<!-- Backpage Search -->
-<div class="bp-search">
-	<div class="wrap">
-        <?php recurseInsert("templateIncludes/2014/templateSearch.php","php") ?>
-    </div>
-</div>
-
 <!-- Body Content -->
-<div class="wrap hpcard">
-	<section class="bp-body">
+<div id="main-container" class="wrap hpcard">
+	<section class="bp-body" role="main" aria-label="main content">
 		<p class="breadcrumb">
 			<a href="/">Home</a> &rsaquo; {breadCrumbs titlecase="TRUE" spacer="&rsaquo;"}
 		</p>

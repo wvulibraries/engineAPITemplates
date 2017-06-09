@@ -16,7 +16,7 @@
 
 <!-- Body Content -->
 <div class="wrap hpcard">
-	<section class="bp-body-1c">
+	<section id="main-container" class="bp-body-1c" role="main" aria-label="main content">
 		<p class="breadcrumb">
 			<a href="/">Home</a> &rsaquo; {breadCrumbs titlecase="TRUE" spacer="&rsaquo;"}
 		</p>

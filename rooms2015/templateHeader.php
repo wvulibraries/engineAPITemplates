@@ -59,8 +59,8 @@
         <div class="wvu-header mobile wvubottom">
             <a href="#" id="wvutoggle" class="wvu-masthead__logo wvu-masthead__logo--w-signature">
                 <img src="https://lib.wvu.edu/images/2015/wvulogo.svg" alt="WVU Libraries">
-                <i class="fa fa-chevron-down"></i>
-                <i class="fa fa-chevron-up"></i>    
+                <span class="fa fa-chevron-down"></span>
+                <span class="fa fa-chevron-up"></span>    
             </a>
             <ul class="list">
                 <li><a class="links" href="https://lib.wvu.edu/about/">About</a></li>
@@ -108,15 +108,15 @@
                     </a>
                     <?php if (is_empty(session::get("username"))) { ?>
                         <a class="userLogin roomTabletDesktop" href="https://lib.wvu.edu/engineIncludes/login-4.0.php?page={phpself query="true"}">
-                            <i class="fa fa-user"></i>
+                            <span class="fa fa-user"></span>
                             User Login
                         </a>
                     <?php } else { ?>
                         <a class="userLogin roomTabletDesktop" href="{engine var="logoutPage"}?">
-                            <i class="fa fa-user"></i>User Logout
+                            <span class="fa fa-user"></span>User Logout
                         </a>                
                         <a class="userLogin roomTabletDesktop" href="{local var="roomReservationHome"}/calendar/user/" class="roomMobile bSubmit">
-                            <i class="fa fa-check"></i>My Reservations
+                            <span class="fa fa-check"></span>My Reservations
                         </a>
                     <?php } ?>
                 </div>
@@ -138,7 +138,7 @@
                 </div>
                 <div class="sticky-header-search tabBar">
                     <a href="https://lib.wvu.edu/services/rooms/policies/">
-                        <img src="https://lib.wvu.edu/images/2015/alert.svg" alt="Search" id="search-toggle1">
+                        <img src="https://lib.wvu.edu/images/2015/alert.svg" alt="policies" id="alert-toggle1">
                     </a>
                 </div>
             </div>
@@ -146,4 +146,4 @@
 
         <!-- Page Wrapper -->
         <div class="wrap hpcard">
-            <section class="bp-body-1c">
+            <section class="bp-body-1c"  id="main-container" role="main" aria-label="main content">

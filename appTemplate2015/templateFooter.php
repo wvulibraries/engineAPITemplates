@@ -45,7 +45,7 @@
                             </a>
                         </li>
                         <li>
-                            <a class="socmedia" href="http://instagram.com/wvulibrarianlinda" target="_blank">
+                            <a class="socmedia" href="http://instagram.com/wvulibraries" target="_blank">
                                 <img src="https://lib.wvu.edu/images/instagram.png" alt="Instagram" title="Instagram">
                             </a>
                         </li>

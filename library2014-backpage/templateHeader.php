@@ -9,7 +9,7 @@
 
 <!-- Body Content -->
 <div id="main-container" class="wrap hpcard">
-	<section class="bp-body" role="main" aria-label="main content">
+	<section id="main-container" class="bp-body" role="main" aria-label="main content">
 		<p class="breadcrumb">
 			<a href="/">Home</a> &rsaquo; {breadCrumbs titlecase="TRUE" spacer="&rsaquo;"}
 		</p>

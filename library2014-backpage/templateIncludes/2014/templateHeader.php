@@ -53,15 +53,6 @@
         <link type="text/css" rel="stylesheet" href="https://fast.fonts.net/cssapi/36d8cd92-7cc7-499b-b169-0eed9d670283.css"></link>
         <!-- Old Web Font <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,200italic,300,400italic,300italic,600,600italic,700,900,700italic,900italic|Bitter:400,400italic,700' rel='stylesheet' type='text/css'>-->       
 
-        <script type="text/javascript">
-        $(document).ready(function() {
-
-        {local var="alertJS"}
-        
-        });
-        
-        </script>
-
         <?php 
         // include the CSS for the backpage
 
@@ -121,8 +112,3 @@
                 </ul>
             </div>
         </div>
-        
-        <header>
-            <!-- Alert Box -->
-            <div id="alertBar"></div>
-        </header>        

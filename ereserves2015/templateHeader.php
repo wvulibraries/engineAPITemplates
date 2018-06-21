@@ -86,13 +86,13 @@
 						<a class="library-header-logo" href="https://lib.wvu.edu/">WVU Libraries<i class="fa fa-university library-logo"></i></a>
 						<ul class="library-header-links">
 							  <li><a href="https://lib.wvu.edu/"><i class="fa fa-university"></i>Libraries</a></li>
-		            <li><a href="https://lib.wvu.edu//about/"><i class="fa fa-info-circle"></i>About Us</a></li>
+		            <li><a href="https://lib.wvu.edu/about/"><i class="fa fa-info-circle"></i>About Us</a></li>
 		            <li><a href="https://lib.wvu.edu/collections/"><i class="fa fa-inbox"></i>Collections</a></li>
-		            <li><a href="https://lib.wvu.edu//instruction"><i class="fa fa-graduation-cap"></i>Instruction</a></li>
+		            <li><a href="https://lib.wvu.edu/instruction"><i class="fa fa-graduation-cap"></i>Instruction</a></li>
 		    				<li><a href="https://lib.wvu.edu/about/news/"><i class="fa fa-rss"></i>News</a></li>
-		    				<li><a href="https://lib.wvu.edu//services/"><i class="fa fa-cog"></i>Services</a></li>
-		            <li><a href="https://lib.wvu.edu//services/ask/"><i class="fa fa-question-circle"></i>Get Help</a></li>
-		    				<li><a href="https://lib.wvu.edu//about/giving/"><i class="fa fa-heart"></i>Give</a></li>
+		    				<li><a href="https://lib.wvu.edu/services/"><i class="fa fa-cog"></i>Services</a></li>
+		            <li><a href="https://lib.wvu.edu/services/ask/"><i class="fa fa-question-circle"></i>Get Help</a></li>
+		    				<li><a href="https://lib.wvu.edu/about/giving/"><i class="fa fa-heart"></i>Give</a></li>
 						</ul>
 					</div>
 				</div>
@@ -120,12 +120,12 @@
 			                </li>
 			                <li>
 			                    <a class="socmedia" target="_blank" href="https://twitter.com/wvuLibraries">
-			                        <img src="https://lib.wvu.edu//images/2014/wvutwitter.png" alt="Twitter" title="Twitter"></img>
+			                        <img src="https://lib.wvu.edu/images/2014/wvutwitter.png" alt="Twitter" title="Twitter"></img>
 			                    </a>
 			                </li>
 			                <li>
 			                    <a class="socmedia" target="_blank" href="http://www.youtube.com/WVULibraries">
-			                        <img src="https://lib.wvu.edu//images/2014/wvuyoutube.png" alt="Youtube" title="Youtube"></img>
+			                        <img src="https://lib.wvu.edu/images/2014/wvuyoutube.png" alt="Youtube" title="Youtube"></img>
 			                    </a>
 			                </li>
 			            </ul>

@@ -1,6 +1,6 @@
 		    </section>
 		    <nav class="left-nav">
-		    	 <ul>    
+		    	 <ul>
 		    	 	<?php recurseInsert("leftnav.php","php") ?>
 				</ul>
 			</nav>
@@ -35,7 +35,7 @@
 		                </li>
 
 		                <li>
-		                    <a target="_blank" href="http://myaccess.wvu.edu/">My Access</a>
+		                    <a target="_blank" href="http://portal.wvu.edu/">Portal</a>
 		                </li>
 		                <li>
 		                    <a target="_blank" href="http://emergency.wvu.edu/alert/">WVU Alert</a>
@@ -57,7 +57,7 @@
 							<a class="socmedia" href="http://instagram.com/wvulibrarianlinda" target="_blank">
 								<img src="https://lib.wvu.edu//images/2014/instagram.png" alt="Instagram" title="Instagram"</img>
 							</a>
-						</li>			                
+						</li>
 						<li>
 						    <a class="socmedia" target="_blank" href="https://twitter.com/wvuLibraries">
 						        <img src="https://lib.wvu.edu//images/2014/wvutwitter.png" alt="Twitter" title="Twitter"></img>

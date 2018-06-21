@@ -27,10 +27,10 @@
 
 	<!-- Main style sheet for the interior pages -->
 	<link rel="stylesheet" href="http://www.libraries.wvu.edu/css/interior.css" type="text/css" media="screen" />
-	
+
 	<!-- Handles the links in the header image -->
 	<link rel="stylesheet" href="http://www.libraries.wvu.edu/css/interiorHeader.css" type="text/css" media="screen" />
-	
+
 	<!-- Standard 'functions'; Bold, Italic, etc ... -->
 	<link rel="stylesheet" href="http://www.libraries.wvu.edu/css/standard.css" type="text/css" media="screen" />
 
@@ -73,7 +73,7 @@
 
 	<!-- Specific css file for this Template -->
 	<link rel="stylesheet" href="/css/customcss/systems.css" type="text/css" media="screen" />
-	
+
 	<?php recurseInsert("headerIncludes.php","php")	?>
 
 </head>
@@ -85,12 +85,12 @@
 			<br />
 			<strong>
 				This site will work and look better in a modern Web browser that supports Web
-				Standards such as XHTML and CSS. Please visit the 
+				Standards such as XHTML and CSS. Please visit the
 				<a href="/browserupgrade/"> WVU Libraries Web Browser Upgrade page for more information </a>
-				on upgrading your web browser. 
+				on upgrading your web browser.
 				<br /><br />
-				WVU Libraries strongly recommends upgrading your web browser, but will continue 
-				to provide a site that will be functional in all web browsers. 
+				WVU Libraries strongly recommends upgrading your web browser, but will continue
+				to provide a site that will be functional in all web browsers.
 			</strong>
 			<br />
 
@@ -107,8 +107,8 @@
 				<ul>
 
 					<li class="first" id="headSiteMap">
-						<a href="http://www.wvu.edu/siteindex/" title="WVU Sitemap">A-Z Site Index</a> 
-						&nbsp;&middot;&nbsp;			
+						<a href="http://www.wvu.edu/siteindex/" title="WVU Sitemap">A-Z Site Index</a>
+						&nbsp;&middot;&nbsp;
 					</li>
 					<li id="headCampusMap">
 						<a href="http://www.wvu.edu/CampusMap/" title="Campus Map">Campus Map</a>
@@ -116,7 +116,7 @@
 					</li>
 					<li id="headDirectory">
 
-						<a href="http://directory.wvu.edu" title="Campus Map">Directory</a>
+						<a href="https://directory.wvu.edu" title="Campus Map">Directory</a>
 						&nbsp;&middot;&nbsp;
 					</li>
 					<li id="headerLibrariesHome">
@@ -127,25 +127,25 @@
 						<a href="http://www.wvu.edu" title="WVU Homepage">WVU Home</a>
 					</li>
 				</ul> <!-- headerImageMap -->
-				
+
 				<div id="banner">
 					<div id="bannertext">WVU Libraries<br />&nbsp; &nbsp; &nbsp; Systems Office</div>
 				</div>
 
-			
+
 		</div> <!-- header -->
 
 		<div id="content">
 			<div id="left">
-				
+
 				<?php recurseInsert("leftnav.php","php") ?>
-				
+
 			</div>
 			<div id="right">
 				<div id="breadcrumbs">
-					
-					<a href="http://www.libraries.wvu.edu" class="breadCrumbLink">Libraries Home</a> 
-					<span class="breadCrumbSpacer">&rsaquo;</span> 
+
+					<a href="http://www.libraries.wvu.edu" class="breadCrumbLink">Libraries Home</a>
+					<span class="breadCrumbSpacer">&rsaquo;</span>
 					{breadCrumbs type="hierarchical" spacer="&rsaquo;" displayNum="5" titlecase="true"}
-					
+
 				</div>

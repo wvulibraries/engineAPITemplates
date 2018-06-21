@@ -1,7 +1,7 @@
 	</section>
 	<nav class="left-nav">
-			<?php 
-			
+			<?php
+
 				recurseInsert("leftnav.php","php");
 
 			?>
@@ -23,10 +23,10 @@
 					Morgantown, WV 26506-6069<br>
 					Phone: <a href="tel:13042934040">1-304-293-4040</a><br>
 					Fax: 1-304-293-6638<br><br>
-		            
+
 			        <em>
-			            &copy; West Virginia University. 
-			            Last modified {date format="F j, Y" time="<?php print filemtime($_SERVER['SCRIPT_FILENAME']); ?>"}. 
+			            &copy; West Virginia University.
+			            Last modified {date format="F j, Y" time="<?php print filemtime($_SERVER['SCRIPT_FILENAME']); ?>"}.
 			            <span class="disclaimer"> West Virginia University is an Equal Opportunity/Affirmative Action Institution. </span>
 			        </em>
 		            </p>
@@ -36,18 +36,18 @@
 
 		        <div class="wvu-footer">
 		            <ul class="wvuFooterSites">
-                        <nobr>                        
+                        <nobr>
                             <li><a href="http://www.wvu.edu/SiteIndex/">A-Z Site Index</a></li>
                             <li><a href="http://www.wvu.edu/CampusMap/">Campus Map</a></li>
                             <li><a href="http://www.hr.wvu.edu/wvu_jobs">Jobs</a></li>
-                            <li><a href="http://directory.wvu.edu/">Directory</a></li>
+                            <li><a href="https://directory.wvu.edu/">Directory</a></li>
                         </nobr>
                         <nobr>
                             <li><a href="http://www.wvuf.org/">Give</a></li>
-                            <li><a href="http://myaccess.wvu.edu/">MyAccess</a></li>
+                            <li><a href="http://portal.wvu.edu/">Portal</a></li>
                             <li><a href="http://careerservices.wvu.edu/">MountaineerTRAK</a></li>
                         </nobr>
-                        <nobr>                            
+                        <nobr>
                             <li><a href="http://emergency.wvu.edu/alert/">WVU Alert</a></li>
                             <li><a href="http://wvutoday.wvu.edu">WVU Today</a></li>
                             <li><a href="http://mix.wvu.edu/">MIX</a></li>
@@ -60,18 +60,18 @@
 		        </div>
 		    </div>
 		</footer>
-        
+
         <!-- Google Analytics -->
         <?php recurseInsert("ganalytics.html","php") ?>
-        
+
         <!-- CrazyEgg -->
         <script type="text/javascript">
             setTimeout(function(){var a=document.createElement("script");
             var b=document.getElementsByTagName("script")[0];
             a.src=document.location.protocol+"//script.crazyegg.com/pages/scripts/0008/8415.js?"+Math.floor(new Date().getTime()/3600000);
             a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
-        </script> 
-        
+        </script>
+
         <!-- PageFair -->
         <script type="text/javascript">
             (function() {

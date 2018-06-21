@@ -34,8 +34,8 @@
 	<link rel="stylesheet" href="/css/2013/systems.css" type="text/css" media="screen" />
 
 	<?php
-	recurseInsert("templateIncludes/2col.headerIncludes.php", "php");
-	recurseInsert("headerIncludes.php", "php");
+  	recurseInsert("templateIncludes/2col.headerIncludes.php", "php");
+  	recurseInsert("headerIncludes.php", "php");
 	?>
 </head>
 <body>
@@ -51,7 +51,7 @@
 						<a href="https://www.wvu.edu/campusmap/" title="">Campus Map</a>
 					</li>
 					<li>
-						<a href="http://directory.wvu.edu/" title="">Directory</a>
+						<a href="https://directory.wvu.edu/" title="">Directory</a>
 					</li>
 					<li>
 						<a href="https://www.libraries.wvu.edu/about/contactus/" title="">Contact Us</a>

@@ -15,18 +15,18 @@
                 </div>
                 <div class="wvu-footer">
                     <ul class="wvuFooterSites">
-                        <nobr>                        
+                        <nobr>
                             <li><a href="http://www.wvu.edu/SiteIndex/">A-Z Site Index</a></li>
                             <li><a href="http://www.wvu.edu/CampusMap/">Campus Map</a></li>
                             <li><a href="http://www.hr.wvu.edu/wvu_jobs">Jobs</a></li>
-                            <li><a href="http://directory.wvu.edu/">Directory</a></li>
+                            <li><a href="https://directory.wvu.edu/">Directory</a></li>
                         </nobr>
                         <nobr>
                             <li><a href="http://www.wvuf.org/">Give</a></li>
-                            <li><a href="http://myaccess.wvu.edu/">MyAccess</a></li>
+                            <li><a href="http://portal.wvu.edu/">Portal</a></li>
                             <li><a href="http://careerservices.wvu.edu/">MountaineerTRAK</a></li>
                         </nobr>
-                        <nobr>                            
+                        <nobr>
                             <li><a href="http://emergency.wvu.edu/alert/">WVU Alert</a></li>
                             <li><a href="http://wvutoday.wvu.edu">WVU Today</a></li>
                             <li><a href="http://mix.wvu.edu/">MIX</a></li>
@@ -48,7 +48,7 @@
                             <a class="socmedia" href="http://instagram.com/wvuLibraries" target="_blank">
                                 <img src="https://lib.wvu.edu/images/2015/instagram.png" alt="Instagram" title="Instagram">
                             </a>
-                        </li>                           
+                        </li>
                         <li>
                             <a class="socmedia" target="_blank" href="https://twitter.com/wvuLibraries">
                                 <img src="https://lib.wvu.edu/images/2015/twitter.png" alt="Twitter" title="Twitter">
@@ -74,4 +74,4 @@
 
 		</script>
     </body>
-</html>                
+</html>

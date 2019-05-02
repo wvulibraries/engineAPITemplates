@@ -43,7 +43,7 @@
                             <li><a href="https://directory.wvu.edu/">Directory</a></li>
                         </nobr>
                         <nobr>
-                            <li><a href="http://www.wvuf.org/">Give</a></li>
+                            <li><a href="http://www.wvuf.org/">Give to WVU</a></li>
                             <li><a href="http://portal.wvu.edu/">Portal</a></li>
                             <li><a href="http://careerservices.wvu.edu/">MountaineerTRAK</a></li>
                         </nobr>

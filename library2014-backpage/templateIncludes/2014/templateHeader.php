@@ -95,7 +95,7 @@
                 <li><a class="links" href="https://lib.wvu.edu/about/">About</a></li>
                 <li><a class="links" href="https://lib.wvu.edu/collections/">Collections</a></li>
                 <li><a class="links" href="https://lib.wvu.edu/instruction">Instruction</a></li>
-                <li><a class="links" href="https://lib.wvu.edu/about/news/">News</a></li>
+                <li><a class="links" href="https://news.lib.wvu.edu">News</a></li>
                 <li><a class="links" href="https://lib.wvu.edu/services/">Services</a></li>
                 <li><a class="links" href="https://lib.wvu.edu/about/contactus/">Contact</a></li>
                 <li><a class="links" href="https://lib.wvu.edu/about/giving/">Give</a></li>
